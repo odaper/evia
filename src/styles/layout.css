@@ -76,7 +76,13 @@ section#process::before{
   animation:grid-move 50s linear infinite;
   pointer-events:none;
 }
+#hero-root.container {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
 section#process .animated-bg{display:block}
+section#process .orb{mix-blend-mode:screen;opacity:0.6}
 section#process h2,section#process h3{color:var(--white)}
 section#process p{color:var(--neutral-300)}
 section#process .card{
@@ -135,6 +141,7 @@ section#faq::before{
   pointer-events:none;
 }
 section#faq .animated-bg{display:block}
+section#faq .orb{mix-blend-mode:screen;opacity:0.6}
 section#faq h2,section#faq h3{color:var(--white)}
 section#faq p{color:var(--neutral-300)}
 section#faq .card{
@@ -191,6 +198,7 @@ section#tarifs::before{
   pointer-events:none;
 }
 section#tarifs .animated-bg{display:block}
+section#tarifs .orb{mix-blend-mode:screen;opacity:0.6}
 section#tarifs h2,section#tarifs h3{color:var(--white)}
 section#tarifs p{color:var(--neutral-300)}
 section#tarifs .card{
@@ -262,62 +270,33 @@ section#contact form.contact-form textarea:focus{
   display:flex;
   align-items:center;
   padding:100px 0;
-  background:
-    radial-gradient(ellipse at 20% 10%, rgba(30,102,245,0.25) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 15%, rgba(236,164,0,0.12) 0%, transparent 45%),
-    radial-gradient(ellipse at 50% 100%, rgba(15,163,177,0.4) 0%, rgba(15,163,177,0.25) 35%, transparent 65%),
-    linear-gradient(180deg, #0a0e17 0%, #0f141f 25%, #141b2a 45%, #0e3d42 75%, #0a3840 100%);
-  background-size:150% 150%, 150% 150%, 100% 100%, 100% 100%;
-  animation:hero-gradient 28s ease infinite;
+  color:var(--white);
+  animation:dark-gradient 30s ease infinite;
   position:relative;
   overflow:hidden;
-  color:var(--white);
-}
-@keyframes hero-gradient{
-  0%,100%{background-position:0% 50%, 100% 50%, 0% 0%, 0% 0%}
-  50%{background-position:100% 50%, 0% 50%, 0% 0%, 0% 0%}
 }
 .hero::before{
   content:'';
   position:absolute;
   inset:0;
   background:
-    url("data:image/svg+xml,%3Csvg width='120' height='120' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='grid-hero' width='30' height='30' patternUnits='userSpaceOnUse'%3E%3Cpath d='M 30 0 L 0 0 0 30' fill='none' stroke='rgba(15,163,177,0.04)' stroke-width='0.5'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grid-hero)'/%3E%3C/svg%3E");
-  opacity:.3;
-  animation:grid-move 60s linear infinite;
+    url("data:image/svg+xml,%3Csvg width='120' height='120' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='grid-dark' width='30' height='30' patternUnits='userSpaceOnUse'%3E%3Cpath d='M 30 0 L 0 0 0 30' fill='none' stroke='rgba(30,102,245,0.06)' stroke-width='0.5'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grid-dark)'/%3E%3C/svg%3E");
+  opacity:0.4;
+  animation:grid-move 50s linear infinite;
   pointer-events:none;
 }
 @keyframes grid-move{
   0%{transform:translate(0,0)}
   100%{transform:translate(120px,120px)}
 }
-@keyframes wave{
-  0%, 100%{opacity:0.6}
-  50%{opacity:1}
-}
-.hero::after{
-  content:'';
-  position:absolute;
-  inset:0;
-  background:
-    radial-gradient(circle at 15% 12%, rgba(30,102,245,0.15) 0%, transparent 35%),
-    radial-gradient(circle at 85% 18%, rgba(236,164,0,0.1) 0%, transparent 30%),
-    radial-gradient(ellipse at 50% 95%, rgba(15,163,177,0.3) 0%, transparent 50%);
-  animation:pulse-glow 9s ease-in-out infinite;
-  pointer-events:none;
-}
-@keyframes pulse-glow{
-  0%, 100%{opacity:0.7;transform:scale(1)}
-  50%{opacity:1;transform:scale(1.05)}
-}
-.hero .animated-bg{display:block;z-index:0}
+.hero .animated-bg{display:block}
+.hero .orb{mix-blend-mode:screen;opacity:0.6}
+.hero .container{position:initial;z-index:1}
 .hero .content{
   display:grid;
   grid-template-columns:1.2fr .8fr;
   gap:48px;
   align-items:center;
-  position:relative;
-  z-index:1;
 }
 .hero h1{
   color:var(--white);
