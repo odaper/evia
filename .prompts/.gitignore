@@ -1,0 +1,3 @@
+# Temporary .md files (deleted on commit by pre-commit hook)
+# This is a safety measure in case the hook fails
+*.md

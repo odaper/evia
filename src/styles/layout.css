@@ -62,13 +62,6 @@ section#services .card{
 
 /* Dark Section - Process */
 section#process{
-  background:
-    radial-gradient(circle at 20% 25%, rgba(30,102,245,0.2) 0%, transparent 45%),
-    radial-gradient(circle at 80% 65%, rgba(15,163,177,0.18) 0%, transparent 45%),
-    radial-gradient(circle at 50% 50%, rgba(236,164,0,0.12) 0%, transparent 50%),
-    radial-gradient(circle at 35% 75%, rgba(30,102,245,0.1) 0%, transparent 40%),
-    linear-gradient(135deg, #0a0e17 0%, #0f141f 25%, #141b2a 50%, #0f141f 75%, #0a0e17 100%);
-  background-size:150% 150%, 150% 150%, 150% 150%, 150% 150%, 100% 100%;
   color:var(--white);
   animation:dark-gradient 30s ease infinite;
   position:relative;
@@ -127,12 +120,6 @@ section#about .card{
 
 /* Dark Section - FAQ */
 section#faq{
-  background:
-    radial-gradient(circle at 72% 28%, rgba(236,164,0,0.18) 0%, transparent 45%),
-    radial-gradient(circle at 25% 72%, rgba(30,102,245,0.16) 0%, transparent 45%),
-    radial-gradient(circle at 50% 45%, rgba(15,163,177,0.1) 0%, transparent 50%),
-    linear-gradient(135deg, #141b2a 0%, #0f141f 25%, #0a0e17 50%, #0f141f 75%, #141b2a 100%);
-  background-size:150% 150%, 150% 150%, 150% 150%, 100% 100%;
   color:var(--dark-text);
   animation:dark-gradient 28s ease infinite;
   position:relative;
@@ -189,12 +176,6 @@ section#documents .card{
 
 /* Dark Section - Pricing */
 section#tarifs{
-  background:
-    radial-gradient(circle at 18% 38%, rgba(15,163,177,0.2) 0%, transparent 45%),
-    radial-gradient(circle at 82% 62%, rgba(236,164,0,0.16) 0%, transparent 45%),
-    radial-gradient(circle at 48% 48%, rgba(30,102,245,0.12) 0%, transparent 50%),
-    linear-gradient(135deg, #0a0e17 0%, #0f141f 25%, #1a2332 50%, #0f141f 75%, #0a0e17 100%);
-  background-size:150% 150%, 150% 150%, 150% 150%, 100% 100%;
   color:var(--dark-text);
   animation:dark-gradient 26s ease infinite;
   position:relative;
@@ -282,35 +263,33 @@ section#contact form.contact-form textarea:focus{
   align-items:center;
   padding:100px 0;
   background:
-    radial-gradient(circle at 18% 25%, rgba(30,102,245,0.2) 0%, transparent 45%),
-    radial-gradient(circle at 82% 55%, rgba(15,163,177,0.18) 0%, transparent 45%),
-    radial-gradient(circle at 45% 85%, rgba(236,164,0,0.15) 0%, transparent 45%),
-    radial-gradient(circle at 70% 15%, rgba(30,102,245,0.12) 0%, transparent 40%),
-    linear-gradient(135deg, #0a0e17 0%, #0f141f 20%, #141b2a 40%, #0f141f 60%, #1a2332 80%, #0a0e17 100%);
-  background-size:150% 150%, 150% 150%, 150% 150%, 150% 150%, 100% 100%;
-  animation:hero-gradient 25s ease infinite;
+    radial-gradient(ellipse at 20% 10%, rgba(30,102,245,0.25) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 15%, rgba(236,164,0,0.12) 0%, transparent 45%),
+    radial-gradient(ellipse at 50% 100%, rgba(15,163,177,0.4) 0%, rgba(15,163,177,0.25) 35%, transparent 65%),
+    linear-gradient(180deg, #0a0e17 0%, #0f141f 25%, #141b2a 45%, #0e3d42 75%, #0a3840 100%);
+  background-size:150% 150%, 150% 150%, 100% 100%, 100% 100%;
+  animation:hero-gradient 28s ease infinite;
   position:relative;
   overflow:hidden;
   color:var(--white);
 }
 @keyframes hero-gradient{
-  0%{background-position:0% 50%, 100% 50%, 50% 100%, 0% 0%, 0% 0%}
-  50%{background-position:100% 50%, 0% 50%, 50% 0%, 100% 100%, 100% 0%}
-  100%{background-position:0% 50%, 100% 50%, 50% 100%, 0% 0%, 0% 0%}
+  0%,100%{background-position:0% 50%, 100% 50%, 0% 0%, 0% 0%}
+  50%{background-position:100% 50%, 0% 50%, 0% 0%, 0% 0%}
 }
 .hero::before{
   content:'';
   position:absolute;
   inset:0;
   background:
-    url("data:image/svg+xml,%3Csvg width='120' height='120' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='grid-hero' width='30' height='30' patternUnits='userSpaceOnUse'%3E%3Cpath d='M 30 0 L 0 0 0 30' fill='none' stroke='rgba(30,102,245,0.08)' stroke-width='0.5'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grid-hero)'/%3E%3C/svg%3E");
-  opacity:.4;
-  animation:grid-move 50s linear infinite;
+    url("data:image/svg+xml,%3Csvg width='120' height='120' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='grid-hero' width='30' height='30' patternUnits='userSpaceOnUse'%3E%3Cpath d='M 30 0 L 0 0 0 30' fill='none' stroke='rgba(15,163,177,0.04)' stroke-width='0.5'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grid-hero)'/%3E%3C/svg%3E");
+  opacity:.3;
+  animation:grid-move 60s linear infinite;
   pointer-events:none;
 }
 @keyframes grid-move{
   0%{transform:translate(0,0)}
-  100%{transform:translate(100px,100px)}
+  100%{transform:translate(120px,120px)}
 }
 @keyframes wave{
   0%, 100%{opacity:0.6}
@@ -321,17 +300,15 @@ section#contact form.contact-form textarea:focus{
   position:absolute;
   inset:0;
   background:
-    radial-gradient(circle at 12% 20%, rgba(30,102,245,0.15) 0%, transparent 35%),
-    radial-gradient(circle at 88% 25%, rgba(15,163,177,0.12) 0%, transparent 35%),
-    radial-gradient(circle at 50% 90%, rgba(236,164,0,0.12) 0%, transparent 35%),
-    radial-gradient(circle at 25% 75%, rgba(30,102,245,0.1) 0%, transparent 30%),
-    radial-gradient(circle at 75% 65%, rgba(15,163,177,0.1) 0%, transparent 30%);
-  animation:pulse-glow 10s ease-in-out infinite;
+    radial-gradient(circle at 15% 12%, rgba(30,102,245,0.15) 0%, transparent 35%),
+    radial-gradient(circle at 85% 18%, rgba(236,164,0,0.1) 0%, transparent 30%),
+    radial-gradient(ellipse at 50% 95%, rgba(15,163,177,0.3) 0%, transparent 50%);
+  animation:pulse-glow 9s ease-in-out infinite;
   pointer-events:none;
 }
 @keyframes pulse-glow{
-  0%, 100%{opacity:0.5;transform:scale(1)}
-  50%{opacity:1;transform:scale(1.08)}
+  0%, 100%{opacity:0.7;transform:scale(1)}
+  50%{opacity:1;transform:scale(1.05)}
 }
 .hero .animated-bg{display:block;z-index:0}
 .hero .content{
@@ -344,19 +321,11 @@ section#contact form.contact-form textarea:focus{
 }
 .hero h1{
   color:var(--white);
-  background:linear-gradient(135deg, #ffffff 0%, var(--logo-blue) 40%, var(--logo-teal) 70%, var(--logo-orange) 100%);
-  background-size:200% auto;
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-  background-clip:text;
-  animation:gradient-text 6s ease infinite;
+  font-family:var(--font-sans);
+  font-weight:700;
 }
-@keyframes gradient-text{
-  0%, 100%{background-position:0% center}
-  50%{background-position:100% center}
-}
-.hero p{color:var(--neutral-300)}
-.hero .muted{color:var(--neutral-400)}
+.hero p{color:rgba(255,255,255,0.85);font-family:var(--font-sans)}
+.hero .muted{color:rgba(255,255,255,0.75);font-family:var(--font-sans)}
 .hero .kpis{display:flex;gap:32px;margin-top:24px;flex-wrap:wrap}
 .hero .kpis .kpi{
   display:flex;
@@ -370,13 +339,11 @@ section#contact form.contact-form textarea:focus{
 .hero .kpis .kpi:nth-child(3){animation-delay:0.7s}
 .hero .kpis .kpi strong{
   font-size:32px;
-  background:linear-gradient(135deg, var(--logo-blue) 0%, var(--logo-teal) 100%);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-  background-clip:text;
+  color:var(--logo-blue);
   font-weight:700;
+  font-family:var(--font-sans);
 }
-.hero .kpis .kpi span{font-size:14px;color:var(--neutral-400)}
+.hero .kpis .kpi span{font-size:14px;color:rgba(255,255,255,0.7);font-family:var(--font-sans)}
 
 .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
 .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:32px}
