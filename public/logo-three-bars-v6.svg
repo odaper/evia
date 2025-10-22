@@ -1,0 +1,12 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Three bars forming circle with checkmark - Coral/Purple/Teal -->
+  <path d="M8 12 Q 16 8 24 12" stroke="#F97316" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <line x1="7" y1="16" x2="25" y2="16" stroke="#9333EA" stroke-width="3" stroke-linecap="round"/>
+  <path d="M8 20 Q 16 24 24 20" stroke="#14B8A6" stroke-width="3" stroke-linecap="round" fill="none"/>
+  
+  <!-- Small checkmark in center -->
+  <circle cx="16" cy="16" r="3.5" fill="#FFFFFF"/>
+  <circle cx="16" cy="16" r="3.3" fill="#10B981"/>
+  <path d="M14.5 16 L15.5 17 L17.5 15" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+

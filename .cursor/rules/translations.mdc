@@ -1,0 +1,10 @@
+---
+globs: *.ts,*.tsx
+---
+## Translations and locale behavior
+
+- Locales supported: `fr`, `en`, `ar` via the `i18n` map in [src/i18n.ts](mdc:src/i18n.ts).
+- Locale detection: `detectLocale()` reads `localStorage.locale`, then falls back to `navigator.language` (ar→`ar`, en→`en`, otherwise `fr`).
+- Direction and lang attributes are set by `setDocumentDirection(locale)` on `<html>`.
+- Components receive a `Translations` object from `main.ts` and must be pure (no internal locale reads).
+- Language switching: a `#lang-switch` `<select>` triggers re-render; persist the choice in `localStorage`.

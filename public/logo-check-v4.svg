@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Checkmark - Purple Lime Coral -->
+  <circle cx="50" cy="50" r="45" fill="#a855f7" opacity="0.3"/>
+  <circle cx="35" cy="50" r="20" fill="#a855f7"/>
+  <circle cx="65" cy="50" r="20" fill="#84cc16"/>
+  <circle cx="50" cy="30" r="20" fill="#fb7185"/>
+  <!-- Checkmark in center -->
+  <path d="M 45 50 L 48 53 L 55 45" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
