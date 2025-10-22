@@ -17,39 +17,34 @@ export function renderContactForm(t: Translations): string {
       <form class="card contact-form" action="${action}" method="POST">
         <div class="grid-2">
           <div>
-            <label for="name">${t.contact.labels.name}</label>
-            <input id="name" name="name" type="text" required placeholder="${t.contact.placeholders.name}" />
-          </div>
-          <div>
             <label for="email">${t.contact.labels.email}</label>
             <input id="email" name="email" type="email" required placeholder="${t.contact.placeholders.email}" />
           </div>
-        </div>
-        <div class="grid-2" style="margin-top:16px">
           <div>
             <label for="phone">${t.contact.labels.phone}</label>
             <input id="phone" name="phone" type="tel" placeholder="${t.contact.placeholders.phone}" />
           </div>
-          <div>
-            <label for="city">${t.contact.labels.city}</label>
-            <input id="city" name="city" type="text" placeholder="${t.contact.placeholders.city}" />
+        </div>
+        <div style="margin-top:20px">
+          <label for="type-0" style="display:block;margin-bottom:12px">${t.contact.labels.type}</label>
+          <div class="service-toggle-group">
+            ${t.contact.options.slice(0, 3).map((o:string, i:number)=>`
+              <input type="radio" id="type-${i}" name="type" value="${o}" ${i===0?'required':''} />
+              <label for="type-${i}" class="toggle-btn">${o}</label>
+            `).join('')}
+            <input type="radio" id="type-other" name="type" value="${t.contact.options[4] || 'Other'}" />
+            <label for="type-other" class="toggle-btn">${t.contact.options[4] || 'Other'}</label>
           </div>
         </div>
-        <div style="margin-top:16px">
-          <label for="type">${t.contact.labels.type}</label>
-          <select id="type" name="type" required>
-            <option value="">—</option>
-            ${t.contact.options.map((o:string)=>`<option>${o}</option>`).join('')}
-          </select>
-        </div>
-        <div style="margin-top:16px">
+        <div style="margin-top:20px">
           <label for="message">${t.contact.labels.message}</label>
-          <textarea id="message" name="message" rows="4" placeholder="${t.contact.placeholders.message}"></textarea>
+          <textarea id="message" name="message" rows="5" placeholder="${t.contact.placeholders.message}"></textarea>
         </div>
-        <div style="margin-top:16px">
-          <label style="display:flex;gap:10px;align-items:start;cursor:pointer">
-            <input type="checkbox" name="consent" required style="margin-top:4px" />
-            <span style="font-size:14px;color:#6b7280">${t.contact.consent} <a href="/politique-confidentialite.html" style="color:var(--logo-blue)">Privacy</a>.</span>
+        <div style="margin-top:20px">
+          <label class="modern-checkbox">
+            <input type="checkbox" name="consent" required />
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-label">${t.contact.consent} <a href="/politique-confidentialite.html" style="color:var(--logo-blue)">Privacy</a>.</span>
           </label>
         </div>
         <input type="text" name="_honeypot" style="display:none" tabindex="-1" autocomplete="off" />

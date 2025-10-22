@@ -8,105 +8,106 @@ export const i18n: Record<Locale, Translations> = {
       brand: 'Evia Services',
       services: 'Services',
       process: 'Processus',
+      about: 'Présentation',
       documents: 'Documents',
       pricing: 'Tarifs & délais',
       engagements: 'Engagements',
-      cta: 'Demander un diagnostic',
+      cta: 'Nous contacter',
       switcher: 'Langue'
     },
     hero: {
       badge: '✓ Procédure officielle TLS',
-      title: 'Agence de traitement des dossiers visa à Tunis',
-      subtitle: 'Evia Services accompagne particuliers et professionnels pour la préparation, la constitution et le suivi de dossiers de visa, avec un service rapide, rigoureux et personnalisé.',
-      cta1: 'Demander un diagnostic gratuit',
+      title: 'Votre partenaire pour réussir votre carrière en France',
+      subtitle: 'Evia Services accompagne les professionnels pour l\'obtention de visas travail, visas talent et la réussite de leurs entretiens professionnels. Un service spécialisé, rigoureux et personnalisé pour votre projet professionnel.',
+      cta1: 'Nous contacter',
       cta2: 'Découvrir nos services'
     },
     services: {
       badge: 'Nos services',
       title: 'Ce que nous proposons',
-      subtitle: 'Accompagnement complet pour la préparation, la constitution et le suivi de votre dossier',
+      subtitle: 'Un accompagnement professionnel complet pour votre réussite en France',
       salariedTitle: 'Visa salarié',
-      salariedDesc: 'Accompagnement pour travailleurs étrangers, entreprises et candidats mobilité/talent. Dossiers conformes et cohérents.',
+      salariedDesc: 'Accompagnement complet pour professionnels et entreprises. Prise de RDV gratuite et officielle selon la procédure TLS. Dossiers conformes et cohérents.',
       talentTitle: 'Visa talent',
-      talentDesc: 'Assistance pour profils qualifiés, chercheurs, artistes, entrepreneurs — visas longue durée (France).',
-      touristTitle: 'Visa touristique',
-      touristDesc: 'Préparation et vérification pour séjours de courte durée; conformité aux exigences consulaires.',
+      talentDesc: 'Assistance pour profils qualifiés, chercheurs, entrepreneurs. Prise de RDV gratuite et officielle selon la procédure TLS. Visas longue durée (France).',
+      touristTitle: 'Coaching entretiens',
+      touristDesc: 'Préparation intensive pour réussir vos entretiens professionnels. Techniques de communication, mise en situation et stratégies pour convaincre les recruteurs.',
       link: 'Nous contacter →'
     },
     process: {
       badge: 'Processus',
       title: 'Comment se déroule votre accompagnement',
-      subtitle: 'Étapes clés de la prise en charge de votre dossier',
+      subtitle: 'Étapes clés de la prise en charge de votre projet professionnel',
       steps: [
-        { t: 'Analyse du profil', d: 'Compréhension de votre projet (tourisme, professionnel, longue durée).' },
-        { t: 'Liste personnalisée', d: 'Documents requis adaptés à votre type de visa.' },
+        { t: 'Analyse du profil', d: 'Compréhension de votre projet professionnel et de vos objectifs de carrière.' },
+        { t: 'Liste personnalisée', d: 'Documents requis adaptés à votre type de visa professionnel.' },
         { t: 'Formulaires officiels', d: 'Remplissage et contrôle des formulaires nécessaires.' },
-        { t: 'RDV centre de visa', d: 'Assistance à la prise de rendez-vous (procédure officielle).' },
+        { t: 'RDV TLS gratuit', d: 'Prise de rendez-vous gratuite selon la procédure officielle TLS.' },
         { t: 'Dossier complet', d: 'Vérification finale de cohérence et complétude.' },
-        { t: 'Suivi jusqu’à décision', d: 'Accompagnement jusqu’au résultat final.' }
+        { t: 'Suivi & coaching', d: 'Accompagnement jusqu\'au résultat et préparation aux entretiens si nécessaire.' }
       ]
     },
     about: {
       badge: 'Présentation',
-      title: 'Agence de traitement des dossiers visa à Tunis',
-      subtitle: 'Evia Services accompagne particuliers et professionnels dans la préparation, la constitution et le suivi des dossiers de visa.',
-      paragraph: 'Notre mission est de simplifier vos démarches consulaires avec un service rapide, rigoureux et personnalisé. Nous mettons notre expertise au service de vos objectifs (tourisme, professionnel, longue durée) pour maximiser vos chances d’obtention, tout en respectant les procédures officielles.'
+      title: 'Spécialiste de l\'accompagnement professionnel en France',
+      subtitle: 'Evia Services accompagne les professionnels dans leur projet de carrière en France : visas travail et coaching.',
+      paragraph: 'Notre mission est de simplifier vos démarches professionnelles avec un service spécialisé, rigoureux et personnalisé. Nous nous concentrons exclusivement sur le domaine professionnel : obtention de visas salarié et talent avec prise de RDV gratuite TLS, et coaching pour réussir vos entretiens. Notre expertise maximise vos chances de succès tout en respectant les procédures officielles.'
     },
     engagements: {
       badge: 'Engagements & Procédure',
       title: 'Notre accompagnement et nos engagements',
-      subtitle: 'Processus clair et engagements qualité pour chaque dossier',
+      subtitle: 'Processus clair et engagements qualité pour votre réussite professionnelle',
       procedure: [
-        'Analyse de votre profil et de votre projet',
+        'Analyse de votre profil et de votre projet professionnel',
         'Vérification et complétude des pièces justificatives',
         'Remplissage des formulaires officiels',
-        'Assistance à la prise de rendez-vous auprès du centre de demande de visa',
-        'Suivi du dossier jusqu’à la décision finale'
+        'Prise de RDV gratuite selon la procédure officielle TLS',
+        'Suivi du dossier et coaching entretiens si nécessaire'
       ],
       quality: [
-        'Accompagnement professionnel et confidentiel',
-        'Information claire et actualisée sur les procédures',
-        'Traitement rapide et transparent',
-        'Écoute attentive et suivi personnalisé'
+        'Accompagnement professionnel spécialisé et confidentiel',
+        'Focus exclusif sur les projets professionnels',
+        'Prise de RDV TLS gratuite pour visas salarié et talent',
+        'Coaching personnalisé pour entretiens professionnels'
       ]
     },
     documents: {
       badge: 'Documents à fournir',
-      title: 'Pièces selon votre type de visa',
-      subtitle: 'Liste indicative — peut varier selon le consulat et votre situation',
+      title: 'Pièces selon votre type de visa professionnel',
+      subtitle: 'Liste indicative — peut varier selon votre situation professionnelle',
       bullets: [
         'Passeport en cours de validité',
-        'Photo d’identité récente',
-        'Justificatifs d’hébergement et de moyens financiers',
-        'Contrat de travail ou lettre d’invitation (salarié/talent)',
-        'Assurance voyage couvrant la durée du séjour',
+        'Photo d\'identité récente aux normes',
+        'Contrat de travail ou promesse d\'embauche',
+        'Diplômes et certifications professionnelles',
+        'Justificatifs d\'hébergement et de moyens financiers',
         'Formulaire de demande rempli et signé'
       ],
-      helpTitle: 'Besoin d’aide ?',
-      helpText: 'Nous personnalisons la liste selon votre profil et vérifions chaque pièce pour assurer la cohérence du dossier.',
-      cta: 'Demander un diagnostic'
+      helpTitle: 'Besoin d\'aide ?',
+      helpText: 'Nous personnalisons la liste selon votre profil professionnel et vérifions chaque pièce pour assurer la cohérence du dossier. Prise de RDV TLS gratuite incluse.',
+      cta: 'Nous contacter'
     },
     pricing: {
       badge: 'Tarifs & délais estimés',
-      title: 'Des offres adaptées à votre situation',
-      subtitle: 'Les frais varient selon le type de visa et la complexité du dossier. Pas d’affichage de prix fixe: nous proposons un devis sur demande.',
+      title: 'Des offres adaptées à votre projet professionnel',
+      subtitle: 'Les frais varient selon le type de service. Prise de RDV TLS gratuite pour visas salarié et talent. Devis personnalisé sur demande.',
       cards: [
-        { title: 'Forfait complet', desc: 'Assistance globale: analyse, liste personnalisée, formulaires, prise de RDV, vérification finale et suivi.' },
-        { title: 'Formule express', desc: 'Pour les demandes urgentes, priorisation du traitement et rappels des étapes critiques.' },
-        { title: 'Accompagnement ciblé', desc: 'Intervention sur un point précis (ex: vérification pièces, formulaires, stratégie dossier).' }
+        { title: 'Forfait visa complet', desc: 'Assistance globale: analyse, liste personnalisée, formulaires, prise de RDV TLS gratuite, vérification finale et suivi.' },
+        { title: 'Coaching entretiens', desc: 'Préparation intensive aux entretiens professionnels: techniques, mises en situation, stratégies de communication.' },
+        { title: 'Accompagnement sur mesure', desc: 'Intervention ciblée selon vos besoins: vérification de dossier, préparation spécifique, ou coaching personnalisé.' }
       ],
-      cta: 'Obtenir un devis & délais'
+      cta: 'Obtenir un devis'
     },
     contact: {
       badge: 'Prise de rendez-vous & contact',
-      title: 'Demandez votre diagnostic gratuit',
-      subtitle: 'Remplissez le formulaire: nous revenons vers vous sous 24h avec les étapes et les délais estimés.',
+      title: 'Contactez-nous pour votre projet professionnel',
+      subtitle: 'Remplissez le formulaire: nous revenons vers vous sous 24h. Prise de RDV TLS gratuite pour visas salarié et talent.',
       labels: {
         name: 'Nom complet *',
         email: 'Email *',
         phone: 'Téléphone',
         city: 'Ville',
-        type: 'Type de visa *',
+        type: 'Type de service *',
         message: 'Message'
       },
       placeholders: {
@@ -114,42 +115,42 @@ export const i18n: Record<Locale, Translations> = {
         email: 'votre@email.com',
         phone: '+216 XX XXX XXX',
         city: 'Tunis, Sfax, Sousse...',
-        message: 'Décrivez brièvement votre situation et vos besoins...'
+        message: 'Décrivez brièvement votre projet professionnel et vos besoins...'
       },
-      options: ['Tourisme','Affaires','Études','Visite familiale','Autre'],
-      consent: 'J’accepte d’être contacté(e) par Evia Services et j’ai lu la politique de confidentialité.',
+      options: ['Visa salarié','Visa talent','Coaching entretiens','Accompagnement sur mesure','Autre'],
+      consent: 'J\'accepte d\'être contacté(e) par Evia Services et j\'ai lu la politique de confidentialité.',
       submit: 'Envoyer ma demande'
     },
     footer: {
-      desc: 'Agence de traitement des dossiers visa à Tunis. Préparation, constitution et suivi de dossiers pour particuliers et professionnels.',
-      nav: { services: 'Services', process: 'Processus', documents: 'Documents', pricing: 'Tarifs & délais', faq: 'Engagements', contact: 'Contact' },
+      desc: 'Spécialiste de l\'accompagnement professionnel en France. Visas salarié et talent (RDV TLS gratuit) et coaching pour entretiens professionnels.',
+      nav: { services: 'Services', process: 'Processus', about: 'Présentation', documents: 'Documents', pricing: 'Tarifs & délais', faq: 'Engagements', contact: 'Contact' },
       contactLines: ['Adresse: Tunis, Tunisie','Téléphone: +216 xx xxx xxx','Email: contact@eviaservices.com'],
-      disclaimer: 'Evia Services n’est ni une ambassade ni TLScontact. Aucune garantie d’obtention de visa.'
+      disclaimer: 'Evia Services n\'est ni une ambassade ni TLScontact. Aucune garantie d\'obtention de visa.'
     }
   },
   en: {
-    header: { brand: 'Evia Services', services: 'Services', process: 'Process', documents: 'Documents', pricing: 'Pricing & timelines', engagements: 'Commitments', cta: 'Request a consultation', switcher: 'Language' },
-    hero: { badge: '✓ Official TLS procedure', title: 'Visa application support agency in Tunis', subtitle: 'We help individuals and professionals prepare, compile, and track visa applications with a fast, rigorous and tailored service.', cta1: 'Request a free assessment', cta2: 'See our services' },
-    services: { badge: 'Our services', title: 'What we offer', subtitle: 'End‑to‑end support to prepare and track your application', salariedTitle: 'Work visa', salariedDesc: 'Support for foreign workers, companies and mobility/talent applicants. Compliant, consistent files.', talentTitle: 'Talent visa', talentDesc: 'Support for skilled profiles, researchers, artists and entrepreneurs — long‑stay visas (France).', touristTitle: 'Tourist visa', touristDesc: 'Preparation and verification for short stays; compliant with consular requirements.', link: 'Contact us →' },
-    process: { badge: 'Process', title: 'How we support you', subtitle: 'Key steps of our handling', steps: [ { t:'Profile analysis', d:'Understand your goal (tourism, business, long stay).'}, { t:'Personalized list', d:'Required documents adapted to your visa type.'}, { t:'Official forms', d:'Fill in and validate required forms.'}, { t:'Visa center appointment', d:'Assistance with booking (official procedure).'}, { t:'Complete dossier', d:'Final consistency and completeness check.'}, { t:'Follow‑up until decision', d:'Support until final result.'} ] },
-    about: { badge: 'About', title: 'Visa application support agency in Tunis', subtitle: 'Evia Services supports individuals and professionals with visa applications.', paragraph: 'Our mission is to simplify consular procedures with a fast, rigorous and personalized service. We help maximize your chances while strictly following official procedures.' },
-    engagements: { badge:'Commitments & Process', title:'Our support and commitments', subtitle:'Clear process and quality commitments', procedure:['Profile and project analysis','Check and complete supporting documents','Fill official forms','Appointment booking assistance','Follow‑up until decision'], quality:['Professional and confidential support','Clear and up‑to‑date information','Fast and transparent processing','Attentive listening and personalized follow‑up'] },
-    documents: { badge:'Required documents', title:'Documents by visa type', subtitle:'Indicative list — may vary by consulate and situation', bullets:['Valid passport','Recent ID photo','Proof of accommodation and funds','Employment contract or invitation letter (work/talent)','Travel insurance covering the stay','Completed and signed application form'], helpTitle:'Need help?', helpText:'We tailor the list to your profile and verify each document for consistency.', cta:'Request a consultation' },
-    pricing: { badge:'Pricing & timelines', title:'Offers tailored to your case', subtitle:'Fees vary by visa type and dossier complexity. No fixed price; we provide a quote on request.', cards:[ {title:'Complete package', desc:'Full support: analysis, personalized list, forms, booking, final check and follow‑up.'}, {title:'Express', desc:'For urgent cases, prioritized handling and reminders of critical steps.'}, {title:'Targeted support', desc:'Help on a specific point (e.g., document check, forms, dossier strategy).'} ], cta:'Get a quote & timelines' },
-    contact: { badge:'Appointment & contact', title:'Request your free assessment', subtitle:'Fill the form; we will reply within 24h with steps and estimated timelines.', labels:{name:'Full name *', email:'Email *', phone:'Phone', city:'City', type:'Visa type *', message:'Message'}, placeholders:{name:'Your full name', email:'you@email.com', phone:'+216 XX XXX XXX', city:'Tunis, Sfax, Sousse...', message:'Briefly describe your situation and needs...'}, options:['Tourism','Business','Studies','Family visit','Other'], consent:'I agree to be contacted by Evia Services and have read the privacy policy.', submit:'Send my request' },
-    footer: { desc:'Visa application support agency in Tunis. Preparation, compilation and follow‑up for individuals and professionals.', nav:{services:'Services', process:'Process', documents:'Documents', pricing:'Pricing', faq:'Commitments', contact:'Contact'}, contactLines:['Address: Tunis, Tunisia','Phone: +216 xx xxx xxx','Email: contact@eviaservices.com'], disclaimer:'Evia Services is neither an embassy nor TLScontact. Visa issuance is never guaranteed.' }
+    header: { brand: 'Evia Services', services: 'Services', process: 'Process', about: 'About', documents: 'Documents', pricing: 'Pricing & timelines', engagements: 'Commitments', cta: 'Contact us', switcher: 'Language' },
+    hero: { badge: '✓ Official TLS procedure', title: 'Your partner for career success in France', subtitle: 'Evia Services helps professionals obtain work visas, talent visas and succeed in job interviews. A specialized, rigorous and personalized service for your professional project.', cta1: 'Contact us', cta2: 'See our services' },
+    services: { badge: 'Our services', title: 'What we offer', subtitle: 'Complete professional support for your success in France', salariedTitle: 'Work visa', salariedDesc: 'Complete support for professionals and companies. Free official TLS appointment booking. Compliant, consistent files.', talentTitle: 'Talent visa', talentDesc: 'Support for skilled profiles, researchers, entrepreneurs. Free official TLS appointment booking. Long-stay visas (France).', touristTitle: 'Interview coaching', touristDesc: 'Intensive preparation for job interviews. Communication techniques, simulations and strategies to convince recruiters.', link: 'Contact us →' },
+    process: { badge: 'Process', title: 'How we support you', subtitle: 'Key steps of your professional project', steps: [ { t:'Profile analysis', d:'Understanding your professional project and career goals.'}, { t:'Personalized list', d:'Required documents adapted to your professional visa type.'}, { t:'Official forms', d:'Fill in and validate required forms.'}, { t:'Free TLS appointment', d:'Free appointment booking according to official TLS procedure.'}, { t:'Complete dossier', d:'Final consistency and completeness check.'}, { t:'Follow-up & coaching', d:'Support until result and interview preparation if needed.'} ] },
+    about: { badge: 'About', title: 'Professional support specialist in France', subtitle: 'Evia Services supports professionals in their career project in France: work visas and coaching.', paragraph: 'Our mission is to simplify your professional procedures with a specialized, rigorous and personalized service. We focus exclusively on the professional field: obtaining work and talent visas with free TLS appointment booking, and coaching to succeed in interviews. Our expertise maximizes your chances of success while respecting official procedures.' },
+    engagements: { badge:'Commitments & Process', title:'Our support and commitments', subtitle:'Clear process and quality commitments for your professional success', procedure:['Analysis of your profile and professional project','Check and complete supporting documents','Fill official forms','Free appointment booking according to official TLS procedure','File follow-up and interview coaching if needed'], quality:['Specialized professional and confidential support','Exclusive focus on professional projects','Free TLS appointment for work and talent visas','Personalized coaching for job interviews'] },
+    documents: { badge:'Required documents', title:'Documents by professional visa type', subtitle:'Indicative list — may vary by professional situation', bullets:['Valid passport','Recent ID photo','Employment contract or job offer','Diplomas and professional certifications','Proof of accommodation and funds','Completed and signed application form'], helpTitle:'Need help?', helpText:'We tailor the list to your professional profile and verify each document for consistency. Free TLS appointment included.', cta:'Contact us' },
+    pricing: { badge:'Pricing & timelines', title:'Offers tailored to your professional project', subtitle:'Fees vary by service type. Free TLS appointment for work and talent visas. Personalized quote on request.', cards:[ {title:'Complete visa package', desc:'Full support: analysis, personalized list, forms, free TLS appointment booking, final check and follow-up.'}, {title:'Interview coaching', desc:'Intensive preparation for job interviews: techniques, simulations, communication strategies.'}, {title:'Customized support', desc:'Targeted intervention according to your needs: file check, specific preparation, or personalized coaching.'} ], cta:'Get a quote' },
+    contact: { badge:'Appointment & contact', title:'Contact us for your professional project', subtitle:'Fill the form; we will reply within 24h. Free TLS appointment for work and talent visas.', labels:{name:'Full name *', email:'Email *', phone:'Phone', city:'City', type:'Service type *', message:'Message'}, placeholders:{name:'Your full name', email:'you@email.com', phone:'+216 XX XXX XXX', city:'Tunis, Sfax, Sousse...', message:'Briefly describe your professional project and needs...'}, options:['Work visa','Talent visa','Interview coaching','Customized support','Other'], consent:'I agree to be contacted by Evia Services and have read the privacy policy.', submit:'Send my request' },
+    footer: { desc:'Professional support specialist in France. Work and talent visas (free TLS appointment) and coaching for job interviews.', nav:{services:'Services', process:'Process', about:'About', documents:'Documents', pricing:'Pricing', faq:'Commitments', contact:'Contact'}, contactLines:['Address: Tunis, Tunisia','Phone: +216 xx xxx xxx','Email: contact@eviaservices.com'], disclaimer:'Evia Services is neither an embassy nor TLScontact. Visa issuance is never guaranteed.' }
   },
   ar: {
-    header: { brand:'إيفيا سيرفيسز', services:'الخدمات', process:'المنهجية', documents:'الوثائق', pricing:'الأسعار والآجال', engagements:'الالتزامات', cta:'طلب تشخيص', switcher:'اللغة' },
-    hero: { badge:'✓ إجراء TLS الرسمي', title:'وكالة دعم ملفات التأشيرة بتونس', subtitle:'نرافق الأفراد والمهنيين في إعداد وتجميع ومتابعة ملفات التأشيرة بخدمة سريعة ودقيقة ومخصصة.', cta1:'اطلب تشخيصًا مجانيًا', cta2:'اكتشف خدماتنا' },
-    services: { badge:'خدماتنا', title:'ماذا نقدّم', subtitle:'مرافقة شاملة لإعداد ومتابعة ملفّك', salariedTitle:'تأشيرة عمل', salariedDesc:'مرافقة للعمال الأجانب والشركات وبرامج المواهب/التنقل. ملفات متوافقة ومتناسقة.', talentTitle:'تأشيرة موهبة', talentDesc:'مرافقة للكفاءات والباحثين والفنانين ورواد الأعمال — تأشيرات طويلة الأجل (فرنسا).', touristTitle:'تأشيرة سياحية', touristDesc:'إعداد ومراجعة لرحلات قصيرة مع احترام المتطلبات القنصلية.', link:'اتصل بنا →' },
-    process: { badge:'المنهجية', title:'كيف نرافقك', subtitle:'الخطوات الأساسية لمعالجة ملفك', steps:[ {t:'تحليل الملف', d:'فهم هدفك (سياحة، عمل، إقامة طويلة).'}, {t:'قائمة مخصصة', d:'الوثائق المطلوبة حسب نوع التأشيرة.'}, {t:'الاستمارات الرسمية', d:'تعبئة ومراجعة الاستمارات اللازمة.'}, {t:'حجز موعد مركز التأشيرات', d:'مساعدة في الحجز وفقًا للإجراءات الرسمية.'}, {t:'ملف مكتمل', d:'مراجعة نهائية للتناسق والاكتفاظ.'}, {t:'متابعة حتى القرار', d:'مرافقة إلى غاية النتيجة النهائية.'} ] },
-    about: { badge:'نبذة', title:'وكالة دعم ملفات التأشيرة بتونس', subtitle:'نرافق الأفراد والمهنيين في معالجة ملفات التأشيرة.', paragraph:'مهمتنا تبسيط الإجراءات القنصلية بخدمة سريعة ودقيقة ومخصصة، مع احترام الإجراءات الرسمية.' },
-    engagements: { badge:'الالتزامات والمنهجية', title:'مرافقتنا والتزاماتنا', subtitle:'منهجية واضحة وجودة مضمونة', procedure:['تحليل الملف والمشروع','مراجعة وإكمال الوثائق','تعبئة الاستمارات الرسمية','المساعدة في حجز الموعد','متابعة حتى القرار'], quality:['مرافقة مهنية وسرية','معلومات واضحة ومحدّثة','معالجة سريعة وشفافة','إنصات ومتابعة مخصصة'] },
-    documents: { badge:'الوثائق المطلوبة', title:'الوثائق حسب نوع التأشيرة', subtitle:'قائمة استرشادية — قد تختلف حسب القنصلية ووضعك', bullets:['جواز سفر ساري المفعول','صورة شخصية حديثة','إثبات السكن والموارد المالية','عقد عمل أو رسالة دعوة (عمل/موهبة)','تأمين سفر يغطي مدة الإقامة','استمارة طلب معبأة وموقعة'], helpTitle:'بحاجة لمساعدة؟', helpText:'نخصّص القائمة حسب ملفك ونراجع كل وثيقة لضمان التناسق.', cta:'طلب تشخيص' },
-    pricing: { badge:'الأسعار والآجال', title:'عروض وفقًا لوضعك', subtitle:'الرسوم تختلف حسب نوع التأشيرة وتعقيد الملف. لا أسعار ثابتة — نقدّم عرض سعر عند الطلب.', cards:[ {title:'باقة كاملة', desc:'تحليل، قائمة مخصصة، استمارات، حجز موعد، مراجعة نهائية ومتابعة.'}, {title:'خدمة مستعجلة', desc:'للملفات العاجلة، أولوية في المعالجة وتذكير بالخطوات المهمة.'}, {title:'مرافقة موجهة', desc:'مساعدة في نقطة محددة (مراجعة الوثائق، الاستمارات، استراتيجية الملف).'} ], cta:'احصل على عرض وسُلم زمني' },
-    contact: { badge:'حجز موعد واتصال', title:'اطلب تشخيصًا مجانيًا', subtitle:'املأ الاستمارة — سنرد خلال 24 ساعة بخطوات وآجال تقديرية.', labels:{name:'الاسم الكامل *', email:'البريد الإلكتروني *', phone:'الهاتف', city:'المدينة', type:'نوع التأشيرة *', message:'الرسالة'}, placeholders:{name:'اسمك الكامل', email:'you@email.com', phone:'+216 XX XXX XXX', city:'تونس، صفاقس، سوسة...', message:'اشرح بإيجاز وضعك واحتياجاتك...'}, options:['سياحة','أعمال','دراسة','زيارة عائلية','أخرى'], consent:'أوافق على الاتصال بي من طرف إيفيا سيرفيسز وقد قرأت سياسة الخصوصية.', submit:'إرسال الطلب' },
-    footer: { desc:'وكالة دعم ملفات التأشيرة بتونس. إعداد وتجميع ومتابعة الملفات للأفراد والمهنيين.', nav:{services:'الخدمات', process:'المنهجية', documents:'الوثائق', pricing:'الأسعار', faq:'الالتزامات', contact:'اتصال'}, contactLines:['العنوان: تونس، تونس','الهاتف: +216 xx xxx xxx','البريد: contact@eviaservices.com'], disclaimer:'لسنا سفارة ولا TLScontact. لا يمكن ضمان الحصول على التأشيرة.' }
+    header: { brand:'إيفيا سيرفيسز', services:'الخدمات', process:'المنهجية', about:'نبذة', documents:'الوثائق', pricing:'الأسعار والآجال', engagements:'الالتزامات', cta:'اتصل بنا', switcher:'اللغة' },
+    hero: { badge:'✓ إجراء TLS الرسمي', title:'شريكك لنجاح مسيرتك المهنية في فرنسا', subtitle:'إيفيا سيرفيسز ترافق المهنيين للحصول على تأشيرات العمل، تأشيرات المواهب والنجاح في المقابلات المهنية. خدمة متخصصة ودقيقة ومخصصة لمشروعك المهني.', cta1:'اتصل بنا', cta2:'اكتشف خدماتنا' },
+    services: { badge:'خدماتنا', title:'ماذا نقدّم', subtitle:'مرافقة مهنية شاملة لنجاحك في فرنسا', salariedTitle:'تأشيرة عمل', salariedDesc:'مرافقة شاملة للمهنيين والشركات. حجز موعد TLS مجاني ورسمي. ملفات متوافقة ومتناسقة.', talentTitle:'تأشيرة موهبة', talentDesc:'مرافقة للكفاءات والباحثين ورواد الأعمال. حجز موعد TLS مجاني ورسمي. تأشيرات طويلة الأجل (فرنسا).', touristTitle:'تدريب للمقابلات', touristDesc:'تحضير مكثف للنجاح في مقابلاتك المهنية. تقنيات التواصل، محاكاة واستراتيجيات لإقناع القائمين بالتوظيف.', link:'اتصل بنا →' },
+    process: { badge:'المنهجية', title:'كيف نرافقك', subtitle:'الخطوات الأساسية لمشروعك المهني', steps:[ {t:'تحليل الملف', d:'فهم مشروعك المهني وأهداف مسيرتك.'}, {t:'قائمة مخصصة', d:'الوثائق المطلوبة حسب نوع التأشيرة المهنية.'}, {t:'الاستمارات الرسمية', d:'تعبئة ومراجعة الاستمارات اللازمة.'}, {t:'موعد TLS مجاني', d:'حجز موعد مجاني وفقًا للإجراء الرسمي TLS.'}, {t:'ملف مكتمل', d:'مراجعة نهائية للتناسق والاكتمال.'}, {t:'متابعة وتدريب', d:'مرافقة حتى النتيجة وتحضير للمقابلات إن لزم الأمر.'} ] },
+    about: { badge:'نبذة', title:'متخصص في المرافقة المهنية في فرنسا', subtitle:'إيفيا سيرفيسز ترافق المهنيين في مشروع مسيرتهم في فرنسا: تأشيرات العمل والتدريب.', paragraph:'مهمتنا تبسيط إجراءاتك المهنية بخدمة متخصصة ودقيقة ومخصصة. نركز حصريًا على المجال المهني: الحصول على تأشيرات العمل والمواهب مع حجز موعد TLS مجاني، والتدريب للنجاح في مقابلاتك. خبرتنا تزيد من فرص نجاحك مع احترام الإجراءات الرسمية.' },
+    engagements: { badge:'الالتزامات والمنهجية', title:'مرافقتنا والتزاماتنا', subtitle:'منهجية واضحة والتزامات جودة لنجاحك المهني', procedure:['تحليل ملفك ومشروعك المهني','مراجعة وإكمال الوثائق الداعمة','تعبئة الاستمارات الرسمية','حجز موعد مجاني وفق الإجراء الرسمي TLS','متابعة الملف وتدريب للمقابلات إن لزم'], quality:['مرافقة مهنية متخصصة وسرية','تركيز حصري على المشاريع المهنية','حجز موعد TLS مجاني لتأشيرات العمل والمواهب','تدريب مخصص للمقابلات المهنية'] },
+    documents: { badge:'الوثائق المطلوبة', title:'الوثائق حسب نوع التأشيرة المهنية', subtitle:'قائمة استرشادية — قد تختلف حسب وضعك المهني', bullets:['جواز سفر ساري المفعول','صورة شخصية حديثة مطابقة للمعايير','عقد عمل أو وعد بالتوظيف','الشهادات والمؤهلات المهنية','إثبات السكن والموارد المالية','استمارة الطلب معبأة وموقعة'], helpTitle:'بحاجة لمساعدة؟', helpText:'نخصّص القائمة حسب ملفك المهني ونراجع كل وثيقة لضمان التناسق. حجز موعد TLS مجاني مشمول.', cta:'اتصل بنا' },
+    pricing: { badge:'الأسعار والآجال', title:'عروض مكيّفة لمشروعك المهني', subtitle:'الرسوم تختلف حسب نوع الخدمة. حجز موعد TLS مجاني لتأشيرات العمل والمواهب. عرض سعر مخصص عند الطلب.', cards:[ {title:'باقة تأشيرة كاملة', desc:'مرافقة شاملة: تحليل، قائمة مخصصة، استمارات، حجز موعد TLS مجاني، مراجعة نهائية ومتابعة.'}, {title:'تدريب للمقابلات', desc:'تحضير مكثف للمقابلات المهنية: تقنيات، محاكاة، استراتيجيات التواصل.'}, {title:'مرافقة حسب الطلب', desc:'تدخل موجه حسب احتياجاتك: مراجعة الملف، تحضير محدد، أو تدريب مخصص.'} ], cta:'احصل على عرض سعر' },
+    contact: { badge:'حجز موعد واتصال', title:'اتصل بنا لمشروعك المهني', subtitle:'املأ الاستمارة — سنرد خلال 24 ساعة. حجز موعد TLS مجاني لتأشيرات العمل والمواهب.', labels:{name:'الاسم الكامل *', email:'البريد الإلكتروني *', phone:'الهاتف', city:'المدينة', type:'نوع الخدمة *', message:'الرسالة'}, placeholders:{name:'اسمك الكامل', email:'you@email.com', phone:'+216 XX XXX XXX', city:'تونس، صفاقس، سوسة...', message:'اشرح بإيجاز مشروعك المهني واحتياجاتك...'}, options:['تأشيرة عمل','تأشيرة موهبة','تدريب للمقابلات','مرافقة حسب الطلب','أخرى'], consent:'أوافق على الاتصال بي من طرف إيفيا سيرفيسز وقد قرأت سياسة الخصوصية.', submit:'إرسال الطلب' },
+    footer: { desc:'متخصص في المرافقة المهنية في فرنسا. تأشيرات العمل والمواهب (موعد TLS مجاني) وتدريب للمقابلات المهنية.', nav:{services:'الخدمات', process:'المنهجية', about:'نبذة', documents:'الوثائق', pricing:'الأسعار', faq:'الالتزامات', contact:'اتصال'}, contactLines:['العنوان: تونس، تونس','الهاتف: +216 xx xxx xxx','البريد: contact@eviaservices.com'], disclaimer:'لسنا سفارة ولا TLScontact. لا يمكن ضمان الحصول على التأشيرة.' }
   }
 }
 

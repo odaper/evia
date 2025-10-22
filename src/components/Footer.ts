@@ -8,16 +8,16 @@ export function renderFooter(t: Translations): string {
         <div>
           <h3>${t.header.brand}</h3>
           <p class="muted">${t.footer.desc}</p>
-          <div class="badge badge-tls" style="margin-top:10px">Procédure officielle TLS</div>
         </div>
         <div>
           <h4>Navigation</h4>
           <ul style="list-style:none;padding:0;margin-top:8px">
             <li><a href="#services">${t.footer.nav.services}</a></li>
             <li><a href="#process">${t.footer.nav.process}</a></li>
+            <li><a href="#about">${t.footer.nav.about}</a></li>
+            <li><a href="#faq">${t.footer.nav.faq}</a></li>
             <li><a href="#documents">${t.footer.nav.documents}</a></li>
             <li><a href="#tarifs">${t.footer.nav.pricing}</a></li>
-            <li><a href="#faq">${t.footer.nav.faq}</a></li>
             <li><a href="#contact">${t.footer.nav.contact}</a></li>
           </ul>
         </div>

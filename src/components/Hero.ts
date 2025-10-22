@@ -19,17 +19,17 @@ export function renderHero(t: Translations): string {
             <a href="#services" class="btn btn-secondary">${t.hero.cta2}</a>
           </div>
           <div class="kpis">
-            <div class="kpi"><strong>+500</strong><span>dossiers accompagnés</span></div>
-            <div class="kpi"><strong>3</strong><span>services essentiels</span></div>
-            <div class="kpi"><strong>100%</strong><span>procédure officielle</span></div>
+            <div class="kpi"><strong>+500</strong><span>professionnels accompagnés</span></div>
+            <div class="kpi"><strong>3</strong><span>services spécialisés</span></div>
+            <div class="kpi"><strong>100%</strong><span>RDV TLS gratuit</span></div>
           </div>
         </div>
         <div class="card hero-card">
           <h3>Ce que nous faisons</h3>
           <ul>
-            <li>Prise de RDV TLS selon la procédure officielle</li>
-            <li>Préparation et vérification complète du dossier</li>
-            <li>Conseil personnalisé selon votre situation</li>
+            <li>Visa salarié & talent - RDV TLS gratuit inclus</li>
+            <li>Coaching pour réussir vos entretiens professionnels</li>
+            <li>Accompagnement spécialisé sur le domaine professionnel</li>
           </ul>
         </div>
       </div>

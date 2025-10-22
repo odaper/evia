@@ -18,10 +18,50 @@ header.site-header.scrolled{
 .nav{display:flex;align-items:center;justify-content:space-between;padding:16px var(--gap)}
 .nav a{color:var(--neutral-200);transition:color var(--transition-base)}
 .nav a:hover{color:var(--logo-blue)}
+.nav .btn.btn-primary:hover{color:var(--white)}
 .nav .brand{display:flex;align-items:center;gap:12px;font-weight:700;color:var(--white);font-size:18px}
 .nav .brand img{transition:all var(--transition-base)}
-.nav .menu{display:flex;gap:32px;align-items:center}
-.nav .cta{margin-left:16px}
+.nav .menu{display:flex;gap:20px;align-items:center;flex-wrap:nowrap}
+.nav .cta{margin-left:8px}
+
+/* Modern language selector */
+.lang-selector{
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 12px;
+  border-radius:var(--radius-md);
+  border:2px solid rgba(255,255,255,.2);
+  background:rgba(255,255,255,.05);
+  transition:all var(--transition-base);
+  cursor:pointer;
+}
+.lang-selector:hover{
+  border-color:var(--logo-blue);
+  background:rgba(255,255,255,.08);
+  box-shadow:0 4px 12px rgba(30,102,245,.3);
+}
+.lang-selector .lang-icon{
+  width:18px;
+  height:18px;
+  color:var(--logo-teal);
+  flex-shrink:0;
+}
+.lang-selector .lang-dropdown{
+  appearance:auto;
+  background:transparent;
+  border:none;
+  color:var(--white);
+  font-weight:600;
+  font-size:14px;
+  cursor:pointer;
+  outline:none;
+  padding:0;
+  padding-right:4px;
+  width:auto;
+  min-width:40px;
+}
 
 main{display:block;overflow:hidden}
 
@@ -235,7 +275,7 @@ section#contact .animated-bg{display:block}
 section#contact h2,section#contact h3{color:var(--light-text)}
 section#contact p{color:#4a5568}
 section#contact .card{
-  background:rgba(255,255,255,0.26);
+  background:rgba(255,255,255,0.6);
   backdrop-filter:blur(30px) saturate(180%);
   border:1px solid rgba(255,255,255,.5);
   box-shadow:0 12px 40px rgba(30,102,245,.16), 0 0 0 1px rgba(255,255,255,.28) inset;
