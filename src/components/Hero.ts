@@ -10,8 +10,8 @@ export function renderHero(t: Translations): string {
       <div class="orb orb-teal" style="width:380px;height:380px;bottom:25%;right:15%"></div>
     </div>
     <div class="container">
-      <div class="content">
-        <div>
+      <div class="hero-content-grid">
+        <div class="hero-text">
           <h1 style="margin-top:20px;animation:fadeInUp 0.8s ease-out forwards;opacity:0;animation-delay:0.3s">${t.hero.title}</h1>
           <p style="margin-top:16px;font-size:18px;animation:fadeInUp 0.8s ease-out forwards;opacity:0;animation-delay:0.4s" class="muted">${t.hero.subtitle}</p>
           <div style="margin-top:32px;display:flex;gap:16px;flex-wrap:wrap;animation:fadeInUp 0.8s ease-out forwards;opacity:0;animation-delay:0.5s">
@@ -24,13 +24,23 @@ export function renderHero(t: Translations): string {
             <div class="kpi"><strong>100%</strong><span>RDV TLS gratuit</span></div>
           </div>
         </div>
-        <div class="card hero-card">
-          <h3>Ce que nous faisons</h3>
-          <ul>
-            <li>Visa salarié & talent - RDV TLS gratuit inclus</li>
-            <li>Coaching pour réussir vos entretiens professionnels</li>
-            <li>Accompagnement spécialisé sur le domaine professionnel</li>
-          </ul>
+        <div class="hero-image-section">
+          <div class="hero-image-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=600&fit=crop&q=80" 
+              alt="Professional consultation - Evia Services helping professionals with visa services"
+              loading="lazy"
+              class="hero-image"
+            />
+          </div>
+          <div class="card hero-card">
+            <h3>Ce que nous faisons</h3>
+            <ul>
+              <li>Visa salarié & talent - RDV TLS gratuit inclus</li>
+              <li>Coaching pour réussir vos entretiens professionnels</li>
+              <li>Accompagnement spécialisé sur le domaine professionnel</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

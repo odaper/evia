@@ -1,0 +1,7 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Three bars forming circle - Magenta/Lime/Amber -->
+  <path d="M8 12 Q 16 8 24 12" stroke="#EC4899" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <line x1="7" y1="16" x2="25" y2="16" stroke="#84CC16" stroke-width="3" stroke-linecap="round"/>
+  <path d="M8 20 Q 16 24 24 20" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" fill="none"/>
+</svg>
+
