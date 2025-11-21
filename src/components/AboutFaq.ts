@@ -33,15 +33,15 @@ export function renderFaq(t: Translations): string {
       </div>
       <div style="max-width:900px;margin:0 auto;display:grid;gap:24px">
         <div class="card" style="padding:32px">
-          <h3 style="margin-bottom:20px">Accompagnement et procédure</h3>
+          <h3 style="margin-bottom:20px">${t.faq.procedureTitle}</h3>
           <ul style="list-style:none;padding:0;display:grid;gap:14px">
-            ${t.engagements.procedure.map((s:string)=>`<li style="color:var(--neutral-300);display:flex;align-items:start;gap:12px"><span style="color:var(--logo-teal);font-size:20px">•</span><span>${s}</span></li>`).join('')}
+            ${t.engagements.procedure.map((s: string) => `<li style="color:var(--neutral-300);display:flex;align-items:start;gap:12px"><span style="color:var(--logo-teal);font-size:20px">•</span><span>${s}</span></li>`).join('')}
           </ul>
         </div>
         <div class="card" style="padding:32px">
-          <h3 style="margin-bottom:20px">Nos engagements qualité</h3>
+          <h3 style="margin-bottom:20px">${t.faq.qualityTitle}</h3>
           <ul style="list-style:none;padding:0;display:grid;gap:14px">
-            ${t.engagements.quality.map((s:string)=>`<li style="color:var(--neutral-300);display:flex;align-items:start;gap:12px"><span style="color:var(--logo-orange);font-size:20px">•</span><span>${s}</span></li>`).join('')}
+            ${t.engagements.quality.map((s: string) => `<li style="color:var(--neutral-300);display:flex;align-items:start;gap:12px"><span style="color:var(--logo-orange);font-size:20px">•</span><span>${s}</span></li>`).join('')}
           </ul>
         </div>
       </div>
