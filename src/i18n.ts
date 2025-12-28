@@ -16,21 +16,24 @@ export const i18n: Record<Locale, Translations> = {
       switcher: 'Langue'
     },
     hero: {
-      badge: 'Mobilité internationale – Coaching – Portage salarial – Full Remote IT',
-      title: 'NOVISA, partenaire de vos projets de mobilité et missions IT',
-      subtitle: 'Accompagnement professionnel pour vos visas, coaching, portage salarial et missions IT en full remote',
+      badge: 'Portage salarial & accompagnement administratif international',
+      title: 'NOVISA — Propulsez votre carrière en France',
+      subtitle: 'L\'expertise complète en portage salarial, visas professionnels et accompagnement RH pour sécuriser votre projet de mobilité internationale.',
       cta1: 'Nous contacter',
       cta2: 'Découvrir nos services',
-      servicesTitle: 'Nos 6 domaines d\'expertise',
-      servicesSubtitle: 'Des solutions complètes pour votre mobilité professionnelle et vos projets IT',
+      servicesTitle: 'Notre expertise au service de votre mobilité',
+      servicesSubtitle: 'Solutions conformes au droit français pour profils internationaux',
       discoverBtn: 'En savoir plus',
+      description: 'NOVISA est spécialisée dans la mise en place de solutions de portage salarial conformes au droit français à destination de profils internationaux, ainsi que dans l\'instruction et la préparation des dossiers de visas professionnels pour la France.',
+      mission: 'Nous accompagnons les candidats internationaux, freelances et entreprises basées à l\'international dans leurs démarches administratives afin de sécuriser leurs projets professionnels en France.',
+      disclaimer1: '⚠️ NOVISA intervient exclusivement sur les aspects administratifs, contractuels et réglementaires.',
+      disclaimer2: '⚠️ NOVISA ne propose pas d\'offres d\'emploi et n\'intervient pas dans la décision des autorités françaises.',
       servicesSummary: [
-        'Structuration professionnelle de votre dossier visa après rendez-vous TLS',
-        'Accompagnement complet pour tous types de Visa Talent (CBE, salarié qualifié, entrepreneur)',
-        'Préparation de dossier visa salarié avec cohérence OFII et projet professionnel',
-        'Structuration de dossier pour missions professionnelles à l\'étranger',
-        'Préparation complète aux entretiens ESN et clients finaux avec simulations',
-        'Gestion administrative complète pour freelances et mise à disposition IT'
+        'Accompagnement complet pour tous types de visas professionnels (Talent, Salarié, Affaires)',
+        'Solutions de portage salarial sécurisées et conformes au droit français',
+        'Coaching personnalisé pour réussir vos entretiens et valoriser votre profil',
+        'Recrutement et gestion de talents internationaux pour missions en full remote',
+        'Externalisation complète de la paie et administration du personnel (ADP)'
       ]
     },
     services: {
@@ -40,82 +43,69 @@ export const i18n: Record<Locale, Translations> = {
       link: 'Nous contacter →',
       cards: [
         {
-          title: 'Accompagnement visa – Notre rôle',
-          intro:
-            'NOVISA intervient après la fixation du rendez-vous TLS/consulat ; il est essentiel de nous contacter au moins une semaine avant, une fois que tous les éléments préalables sont disponibles.',
-          bullets: [
-            'Structurer un dossier professionnel et cohérent',
-            'Mettre en valeur compétences et expériences',
-            'Clarifier le projet global',
-            'Vérifier la cohérence avant dépôt',
-          ],
-          footer: 'Nous ne fournissons aucun document officiel.',
+          title: 'Visas Professionnels',
+          shortDesc: 'Instruction et accompagnement des dossiers de visas pour travailler légalement en France.',
+          intro: 'NOVISA accompagne les entreprises internationales et candidats professionnels dans l’instruction et la constitution de dossiers de visas pour travailler légalement en France.',
+          warning: 'Nous ne fournissons pas d’emploi et ne garantissons pas l’obtention du visa. Nous intervenons exclusivement sur l’aspect administratif et réglementaire.',
+          target: ['Entreprises étrangères : envoyer des collaborateurs en France', 'Candidats qualifiés : cadres, experts, talents internationaux', 'Profils nécessitant un visa salarié, talent ou affaires'],
+          offer: ['Visa salarié : pour collaborateur avec contrat français', 'Visa talent : pour profils qualifiés et experts', 'Visa d’affaires : pour missions ponctuelles ou prospection'],
+          process: ['Analyse du profil et type de visa adapté', 'Préparation complète du dossier administratif', 'Vérification de conformité des documents', 'Coordination avec l’employeur ou société de portage', 'Suivi jusqu’au dépôt auprès des autorités'],
+          notDone: ['Nous ne fournissons pas d’emploi', 'Nous ne décidons pas de l’issue du visa', 'Nous ne faisons pas de promesse de placement'],
+          benefits: ['Process clair et sécurisé', 'Gain de temps considérable', 'Sécurité juridique et conformité', 'Accompagnement international personnalisé'],
+          cta: 'Demander une étude personnalisée'
         },
         {
-          title: 'Visa Talent – Accompagnement',
-          intro: 'NOVISA accompagne tous les types de Visa Talent :',
-          bullets: [
-            'Salarié qualifié',
-            'Carte Bleue Européenne (CBE)',
-            'Salarié en mission',
-            'Chercheur',
-            'Porteur de projet / Entrepreneur',
-            'Mandataire social',
-            'Profession artistique',
-          ],
-          footer: 'Notre rôle : donner visibilité et cohérence aux projets et candidatures.',
+          title: 'Portage Salarial',
+          shortDesc: 'Solution sécurisée pour employer ou facturer en France sans créer de société.',
+          intro: 'NOVISA accompagne les entreprises internationales et consultants professionnels dans la mise en place de solutions de portage salarial conformes au droit français.',
+          target: ['Entreprises étrangères : recruter en France sans entité locale', 'Consultants internationaux : travailler pour des clients français', 'Salariés expatriés : statut salarié avec couverture complète'],
+          offer: ['Conformité légale : Contrat de travail français (CDI/CDD)', 'Sécurité sociale et couverture santé complète', 'Facturation simplifiée et gestion des charges', 'Interface unique : Portage + Administratif + Visas', 'Rapidité et efficacité des process B2B'],
+          process: ['Analyse du besoin (entreprise ou consultant)', 'Élaboration du contrat de portage adapté', 'Mise en place administrative et déclarations', 'Facturation client et transformation en salaire', 'Suivi continu, assistance et reporting'],
+          notDone: ['Nous ne fournissons pas d’emploi ni de missions', 'Nous ne remplaçons pas le management stratégique', 'Le portage ne garantit pas d’office l’obtention d’un visa'],
+          benefits: ['Flexibilité : recruter sans créer de filiale', 'Réduction des risques administratifs', 'Suivi complet du salarié porté', 'Optimisation des coûts et délais'],
+          cta: 'Sécuriser mes missions'
         },
         {
-          title: 'Visa Salarié',
-          intro:
-            'Nous guidons les salariés après autorisation et rendez-vous TLS/consulat, en structurant leur dossier pour assurer cohérence et conformité avec le projet professionnel et les démarches administratives (OFII) :',
-          bullets: [
-            'Structurer le dossier',
-            'Clarifier la cohérence contrat / projet / parcours',
-            'Expliquer les grandes étapes (OFII…)',
-            'Préparer une présentation professionnelle',
-          ],
+          title: 'Coaching Candidats',
+          shortDesc: 'Optimisation de profil et préparation aux entretiens pour le marché français.',
+          intro: 'NOVISA accompagne les candidats internationaux qui rencontrent des difficultés pour décrocher des entretiens ou valoriser leur profil auprès des entreprises françaises.',
+          target: ['Candidats souhaitant travailler légalement en France', 'Professionnels qualifiés cherchant à optimiser leur impact', 'Personnes en portage voulant maximiser leurs chances'],
+          offer: ['Analyse et optimisation du CV et profil LinkedIn', 'Préparation ciblée pour entretiens d’embauche', 'Techniques pour valoriser l’expérience internationale', 'Conseils sur la communication professionnelle'],
+          notDone: ['Nous ne fournissons pas d’emploi', 'Nous ne garantissons pas une embauche', 'Nous ne faisons pas de recrutement direct'],
+          benefits: ['Coaching ciblé et concret', 'Approche pratique des entretiens', 'Gain de confiance immédiat', 'Complément idéal aux démarches visa/portage'],
+          cta: 'Booster ma candidature'
         },
         {
-          title: 'Visa d’affaire',
-          intro:
-            'Pour les salariés envoyés en mission à l’étranger avec un client ou une filiale, NOVISA accompagne la préparation du dossier afin de :',
-          bullets: [
-            'Structurer le dossier',
-            'Clarifier l’objet de la mission',
-            'Présenter la candidature de façon claire et cohérente',
-          ],
+          title: 'Recrutement Full Remote',
+          shortDesc: 'Sourcing et gestion de talents internationaux pour missions à distance.',
+          intro: 'NOVISA accompagne les entreprises internationales dans le recrutement et la gestion de talents à distance pour des missions en France.',
+          target: ['Entreprises souhaitant recruter des talents en France', 'Startups et PME cherchant des profils qualifiés en remote', 'Entreprises ayant besoin d’une solution clé en main'],
+          offer: ['Sourcing et sélection de candidats qualifiés', 'Évaluation des compétences et adéquation mission', 'Mise en place de contrats via portage salarial', 'Gestion administrative complète (paie, social)', 'Suivi et reporting régulier pour l’entreprise'],
+          notDone: ['Nous ne fournissons pas de salariés en interne', 'Nous ne garantissons pas les performances individuelles', 'Nous ne remplaçons pas le management interne'],
+          benefits: ['Accès rapide à des talents qualifiés', 'Conformité légale et administrative assurée', 'Flexibilité et réduction des risques RH', 'Solution intégrée : Recrutement + Portage'],
+          cta: 'Recruter en full remote'
         },
         {
-          title: 'Coaching – Entretiens',
-          intro:
-            'Nous préparons les candidats à réussir leurs entretiens avec les ESN et les clients finaux en travaillant sur les aspects RH, la présentation et la communication professionnelle :',
-          bullets: [
-            'Préparation RH',
-            'Simulation d’entretien',
-            'Mise en valeur du parcours et des compétences',
-            'Gestion du stress et communication professionnelle',
-          ],
-        },
-        {
-          title: 'Portage salarial',
-          intro:
-            'Nous accompagnons les freelances sans patente en prenant en charge l’administration complète pour sécuriser la relation avec le client :',
-          bullets: [
-            'Contrat avec le client',
-            'Facturation et versement des revenus',
-            'Paiement des cotisations CNSS',
-            'Gestion administrative complète',
-          ],
-        },
+          title: 'Externalisation Paie',
+          shortDesc: 'Gestion complète de la paie et administration du personnel en France.',
+          intro: 'NOVISA accompagne les entreprises opérant en France dans la gestion complète de la paie et de l’administration du personnel (ADP).',
+          target: ['Entreprises basées en France ou activité locale', 'Startups, PME et filiales internationales', 'Entreprises cherchant la conformité sociale'],
+          offer: ['Bulletins de paie conformes (Isapaye, Syntec...)', 'Déclarations sociales (URSSAF, retraite, mutuelle)', 'Gestion administrative (contrats, congés, absences)', 'Assistance en cas de contrôle administratif', 'Reporting RH complet et suivi précis'],
+          notDone: ['Ne remplace pas les décisions RH stratégiques', 'Ne gère pas les aspects financiers hors paie', 'Ne gère pas les salariés hors territoire français'],
+          benefits: ['Sécurité juridique et conformité totale', 'Gain de temps et productivité accrue', 'Adaptabilité aux conventions collectives', 'Expertise technique (logiciel Isapaye)'],
+          cta: 'Externaliser ma paie'
+        }
       ]
     },
 
     about: {
       badge: 'Présentation',
       title: 'NOVISA, spécialiste de la mobilité professionnelle',
-      subtitle: 'Mobilité internationale, coaching, portage salarial et full remote IT.',
-      paragraph: 'NOVISA accompagne les professionnels et les entreprises internationales dans tous les aspects de la mobilité professionnelle et des missions IT : préparation des visas (Talent, Salarié, Affaire), coaching aux entretiens, portage salarial et mise à disposition de talents IT en full remote. Notre mission est d’offrir une visibilité claire sur vos projets de mobilité, de structurer vos dossiers de candidature, de valoriser vos compétences et de vous accompagner de façon professionnelle et cohérente à chaque étape. NOVISA n’est pas affiliée aux consulats ni à TLS et ne fournit aucun document officiel ; notre rôle se concentre sur la structuration et la cohérence de votre dossier.'
+      subtitle: 'Mobilité internationale, coaching, portage salarial, recrutement remote et externalisation paie.',
+      paragraph: 'NOVISA accompagne les professionnels et les entreprises internationales dans tous les aspects de la mobilité professionnelle et des services RH : préparation des visas (Talent, Salarié, Affaire), coaching aux entretiens, portage salarial, recrutement de talents en full remote et externalisation de la paie. Notre mission est d’offrir une visibilité claire sur vos projets, de sécuriser vos démarches administratives et de valoriser vos compétences pour réussir votre intégration sur le marché français.',
+      expertiseTitle: 'Notre expertise',
+      missionTitle: 'Notre mission',
+      importantTitle: 'Points importants'
     },
     engagements: {
       badge: 'Rôle & engagements',
@@ -158,16 +148,18 @@ export const i18n: Record<Locale, Translations> = {
       title: 'Des offres adaptées à vos besoins',
       subtitle: 'Les honoraires varient selon le type de visa, le niveau de coaching et les services de portage/full remote IT. Devis personnalisé sur demande.',
       cards: [
-        { title: 'Accompagnement visa Talent / Salarié / Affaire', desc: 'Analyse de votre projet, structuration complète du dossier, mise en valeur du parcours et vérification de la cohérence avant dépôt TLS/consulat.' },
-        { title: 'Coaching entretiens ESN & clients finaux', desc: 'Préparation RH, simulations d’entretien, mise en valeur du profil, gestion du stress et amélioration de la communication professionnelle.' },
-        { title: 'Portage salarial & Full Remote IT', desc: 'Prise en charge administrative complète pour freelances (contrat avec le client, facturation, paiement des cotisations CNSS) et mise à disposition de développeurs tunisiens en full remote avec TJM compétitif.' }
+        { title: 'Visas Professionnels', desc: 'Analyse de projet, structuration complète du dossier et vérification de conformité pour visas Talent, Salarié ou Affaires.' },
+        { title: 'Portage Salarial', desc: 'Gestion administrative complète, contrats de travail français, facturation et couverture sociale pour consultants et entreprises.' },
+        { title: 'Coaching Candidats', desc: 'Optimisation de CV/LinkedIn et préparation intensive aux entretiens pour maximiser vos chances de recrutement.' },
+        { title: 'Recrutement Full Remote', desc: 'Sourcing de talents qualifiés et mise en place de solutions de travail à distance sécurisées et conformes.' },
+        { title: 'Externalisation Paie', desc: 'Gestion complète de la paie, administration du personnel (ADP) et conformité sociale pour entreprises en France.' }
       ],
       cta: 'Obtenir un devis'
     },
     contact: {
       badge: 'Contact NOVISA',
       title: 'Parler de votre projet avec NOVISA',
-      subtitle: 'Décrivez votre projet de mobilité, de portage salarial ou de mission IT en full remote et nous revenons vers vous rapidement.',
+      subtitle: 'Décrivez votre projet (Visas, Portage, Coaching, Recrutement ou Paie) et nous revenons vers vous rapidement.',
       labels: {
         name: 'Nom complet *',
         email: 'Email *',
@@ -183,12 +175,12 @@ export const i18n: Record<Locale, Translations> = {
         city: 'Tunis, Sfax, Sousse...',
         message: 'Décrivez brièvement votre projet et vos besoins...'
       },
-      options: ['Visa Talent / Salarié / Affaire', 'Coaching entretiens', 'Portage salarial / Full Remote IT', 'Autre accompagnement', 'Autre'],
+      options: ['Visas Professionnels', 'Portage Salarial', 'Coaching Candidats', 'Recrutement Full Remote', 'Externalisation Paie', 'Autre'],
       consent: 'J\'accepte d\'être contacté(e) par NOVISA et j\'ai lu la politique de confidentialité.',
       submit: 'Envoyer ma demande'
     },
     footer: {
-      desc: 'Accompagnement visa, coaching professionnel, portage salarial et mise à disposition de talents IT en full remote.',
+      desc: 'Expert en mobilité internationale : Visas, Portage salarial, Coaching, Recrutement remote et Externalisation paie.',
       nav: {
         about: 'Présentation',
         services: 'Services',
@@ -210,7 +202,21 @@ export const i18n: Record<Locale, Translations> = {
     serviceDetails: {
       interested: 'Intéressé par ce service ?',
       contactText: 'Contactez-nous dès maintenant pour commencer votre procédure.',
-      contactBtn: 'Contactez-nous'
+      contactBtn: 'Contactez-nous',
+      targetTitle: 'Public cible',
+      offerTitle: 'Ce que nous proposons',
+      notDoneTitle: 'Ce que nous ne faisons pas',
+      benefitsTitle: 'Vos avantages',
+      processTitle: "Processus d'accompagnement"
+    },
+    references: {
+      title: 'Ils nous font confiance',
+      subtitle: 'Des entreprises qui s’appuient sur notre expertise RH et mobilité.',
+      companies: [
+        { name: 'CAS International', desc: 'Consulting & Advisory Services' },
+        { name: 'SAFARI TECHNOLOGIES', desc: 'Solutions Technologiques' },
+        { name: 'INNOYA SERVICES', desc: 'Services Innovants' }
+      ]
     },
     faq: {
       procedureTitle: 'Accompagnement et procédure',
@@ -230,21 +236,24 @@ export const i18n: Record<Locale, Translations> = {
   en: {
     header: { brand: 'NOVISA', services: 'Services', about: 'About', documents: 'Documents', pricing: 'Pricing & timelines', engagements: 'Commitments', cta: 'Contact us', switcher: 'Language' },
     hero: {
-      badge: 'International mobility – Coaching – Payroll portage – Full Remote IT',
-      title: 'NOVISA, your partner for mobility and IT assignments',
-      subtitle: 'Professional support for your visas, coaching, payroll portage and full remote IT assignments',
+      badge: 'Payroll portage & international administrative support',
+      title: 'NOVISA — Power your career in France',
+      subtitle: 'Complete expertise in payroll portage, professional visas, and HR support to secure your international mobility project.',
       cta1: 'Contact us',
       cta2: 'See our services',
-      servicesTitle: 'Our 6 areas of expertise',
-      servicesSubtitle: 'Complete solutions for your professional mobility and IT projects',
+      servicesTitle: 'Our expertise serving your mobility',
+      servicesSubtitle: 'Solutions compliant with French law for international profiles',
       discoverBtn: 'Learn more',
+      description: 'NOVISA specializes in implementing payroll portage solutions compliant with French law for international profiles, as well as in processing and preparing professional visa applications for France.',
+      mission: 'We support international candidates, freelancers and internationally-based companies in their administrative procedures to secure their professional projects in France.',
+      disclaimer1: '⚠️ NOVISA operates exclusively on administrative, contractual and regulatory aspects.',
+      disclaimer2: '⚠️ NOVISA does not offer job positions and does not intervene in French authorities\' decisions.',
       servicesSummary: [
-        'Professional structuring of your visa file after TLS appointment',
-        'Complete support for all Talent Visa types (EU Blue Card, qualified employee, entrepreneur)',
-        'Employee visa file preparation with OFII consistency and professional project alignment',
-        'File structuring for professional assignments abroad',
-        'Complete interview preparation for ESNs and final clients with simulations',
-        'Full administrative management for freelancers and IT talent provision'
+        'Complete support for all types of professional visas (Talent, Salaried, Business)',
+        'Secure payroll portage solutions compliant with French law',
+        'Personalized coaching to succeed in interviews and highlight your profile',
+        'Recruitment and management of international talents for full remote missions',
+        'Complete payroll outsourcing and personnel administration (ADP)'
       ]
     },
     services: {
@@ -254,82 +263,69 @@ export const i18n: Record<Locale, Translations> = {
       link: 'Contact us →',
       cards: [
         {
-          title: 'Visa support – Our role',
-          intro:
-            'NOVISA intervenes after the TLS/consulate appointment has been booked; it is essential to contact us at least one week before, once all preliminary elements are available.',
-          bullets: [
-            'Structure a professional and coherent file',
-            'Highlight skills and experience',
-            'Clarify the overall project',
-            'Check overall consistency before submission',
-          ],
-          footer: 'We do not provide any official documents.',
+          title: 'Professional Visas',
+          shortDesc: 'Instruction and support for visa applications to work legally in France.',
+          intro: 'NOVISA supports international companies and professional candidates in the instruction and constitution of visa files to work legally in France.',
+          warning: 'We do not provide employment and do not guarantee visa issuance. We operate exclusively on administrative and regulatory aspects.',
+          target: ['Foreign companies: sending employees to France', 'Qualified candidates: managers, experts, international talents', 'Profiles requiring a salaried, talent, or business visa'],
+          offer: ['Salaried visa: for employees with a French contract', 'Talent visa: for qualified profiles and experts', 'Business visa: for one-off missions or prospecting'],
+          process: ['Profile analysis and suitable visa type identification', 'Complete preparation of the administrative file', 'Document compliance verification', 'Coordination with employer or portage company', 'Follow-up until submission to authorities'],
+          notDone: ['We do not provide employment', 'We do not decide on the visa outcome', 'We do not make placement promises'],
+          benefits: ['Clear and secure process', 'Significant time saving', 'Legal security and compliance', 'Personalized international support'],
+          cta: 'Request a personalized study'
         },
         {
-          title: 'Talent visa – Support',
-          intro: 'NOVISA supports all Talent visa categories:',
-          bullets: [
-            'Qualified employee',
-            'EU Blue Card (CBE)',
-            'Employee on assignment',
-            'Researcher',
-            'Project holder / Entrepreneur',
-            'Company officer',
-            'Artistic professions',
-          ],
-          footer: 'Our role: bring visibility and coherence to projects and applications.',
+          title: 'Payroll Portage',
+          shortDesc: 'Secure solution to employ or invoice in France without creating a company.',
+          intro: 'NOVISA supports international companies and professional consultants in setting up payroll portage solutions compliant with French law.',
+          target: ['Foreign companies: recruiting in France without a local entity', 'International consultants: working for French clients', 'Expatriate employees: salaried status with full coverage'],
+          offer: ['Legal compliance: French employment contract (CDI/CDD)', 'Social security and full health coverage', 'Simplified invoicing and expense management', 'Single interface: Portage + Admin + Visas', 'Fast and efficient B2B processes'],
+          process: ['Need analysis (company or consultant)', 'Development of the appropriate portage contract', 'Administrative setup and declarations', 'Client invoicing and salary transformation', 'Continuous follow-up, assistance, and reporting'],
+          notDone: ['We do not provide employment or missions', 'We do not replace strategic management', 'Portage does not automatically guarantee a visa'],
+          benefits: ['Flexibility: recruit without creating a subsidiary', 'Reduction of administrative risks', 'Full follow-up of the ported employee', 'Cost and timeline optimization'],
+          cta: 'Secure my missions'
         },
         {
-          title: 'Employee visa',
-          intro:
-            'We guide employees after authorization and TLS/consulate appointment, structuring their file to ensure consistency with the professional project and administrative steps (OFII):',
-          bullets: [
-            'Structure the file',
-            'Clarify consistency between contract, project and background',
-            'Explain the main steps (OFII, etc.)',
-            'Prepare a professional presentation',
-          ],
+          title: 'Candidate Coaching',
+          shortDesc: 'Profile optimization and interview preparation for the French market.',
+          intro: 'NOVISA supports international candidates facing difficulties in landing interviews or highlighting their profile to French companies.',
+          target: ['Candidates wishing to work legally in France', 'Qualified professionals seeking to optimize their impact', 'People in portage wanting to maximize their chances'],
+          offer: ['CV and LinkedIn profile analysis and optimization', 'Targeted preparation for job interviews', 'Techniques to highlight international experience', 'Advice on professional communication'],
+          notDone: ['We do not provide employment', 'We do not guarantee hiring', 'We do not do direct recruitment'],
+          benefits: ['Targeted and concrete coaching', 'Practical approach to interviews', 'Immediate confidence gain', 'Ideal complement to visa/portage steps'],
+          cta: 'Boost my application'
         },
         {
-          title: 'Business visa',
-          intro:
-            'For employees sent on assignment abroad with a client or subsidiary, NOVISA helps prepare the file in order to:',
-          bullets: [
-            'Structure the file',
-            'Clarify the purpose of the assignment',
-            'Present the application in a clear and coherent way',
-          ],
+          title: 'Full Remote Recruitment',
+          shortDesc: 'Sourcing and management of international talents for remote missions.',
+          intro: 'NOVISA supports international companies in the recruitment and management of remote talents for missions in France.',
+          target: ['Companies wishing to recruit talents in France', 'Startups and SMEs looking for qualified remote profiles', 'Companies needing a turnkey solution'],
+          offer: ['Sourcing and selection of qualified candidates', 'Skills assessment and mission fit', 'Setting up contracts via payroll portage', 'Full administrative management (payroll, social)', 'Regular follow-up and reporting for the company'],
+          notDone: ['We do not provide internal employees', 'We do not guarantee individual performance', 'We do not replace internal management'],
+          benefits: ['Fast access to qualified talents', 'Ensured legal and administrative compliance', 'Flexibility and reduction of HR risks', 'Integrated solution: Recruitment + Portage'],
+          cta: 'Recruit in full remote'
         },
         {
-          title: 'Coaching – Interviews',
-          intro:
-            'We prepare candidates to succeed in their interviews with ESNs and final clients, working on HR aspects, presentation and professional communication:',
-          bullets: [
-            'HR preparation',
-            'Mock interviews',
-            'Highlighting background and skills',
-            'Stress management and professional communication',
-          ],
-        },
-        {
-          title: 'Payroll portage',
-          intro:
-            'We support freelancers without a legal entity by taking care of the full administration to secure the relationship with the client:',
-          bullets: [
-            'Contract with the client',
-            'Invoicing and payment of income',
-            'Payment of social contributions',
-            'Full administrative management',
-          ],
-        },
+          title: 'Payroll Outsourcing',
+          shortDesc: 'Complete payroll management and personnel administration in France.',
+          intro: 'NOVISA supports companies operating in France in the complete management of payroll and personnel administration (ADP).',
+          target: ['Companies based in France or with local activity', 'Startups, SMEs, and international subsidiaries', 'Companies seeking social compliance'],
+          offer: ['Compliant payslips (Isapaye, Syntec...)', 'Social declarations (URSSAF, pension, health)', 'Administrative management (contracts, leave, absences)', 'Assistance in case of administrative audits', 'Complete HR reporting and precise follow-up'],
+          notDone: ['Does not replace strategic HR decisions', 'Does not manage non-payroll financial aspects', 'Does not manage employees outside French territory'],
+          benefits: ['Legal security and total compliance', 'Time saving and increased productivity', 'Adaptability to collective agreements', 'Technical expertise (Isapaye software)'],
+          cta: 'Outsource my payroll'
+        }
       ]
     },
 
     about: {
       badge: 'About',
       title: 'NOVISA, specialist in professional mobility',
-      subtitle: 'International mobility, coaching, payroll portage and full remote IT.',
-      paragraph: 'NOVISA supports professionals and international companies in all aspects of professional mobility and IT assignments: visa preparation (Talent, Employee, Business), interview coaching, payroll portage and the provision of fully remote IT talents. Our mission is to offer clear visibility on your mobility projects, structure your applications, highlight your skills and support you professionally and consistently at each step. NOVISA is not affiliated with consulates or TLS and does not provide official documents; our role is to structure and ensure the coherence of your file.'
+      subtitle: 'International mobility, coaching, payroll portage, remote recruitment, and payroll outsourcing.',
+      paragraph: 'NOVISA supports professionals and international companies in all aspects of professional mobility and HR services: visa preparation (Talent, Employee, Business), interview coaching, payroll portage, full remote talent recruitment, and payroll outsourcing. Our mission is to provide clear visibility on your projects, secure your administrative procedures, and highlight your skills to succeed in your integration into the French market.',
+      expertiseTitle: 'Our expertise',
+      missionTitle: 'Our mission',
+      importantTitle: 'Important points'
     },
     engagements: {
       badge: 'Commitments & role',
@@ -357,24 +353,26 @@ export const i18n: Record<Locale, Translations> = {
       title: 'Offers tailored to your needs',
       subtitle: 'Fees depend on visa type, coaching level and payroll/full remote IT services. Personalised quote on request.',
       cards: [
-        { title: 'Talent / Employee / Business visa support', desc: 'Project analysis, full file structuring, profile enhancement and coherence check before TLS/consulate submission.' },
-        { title: 'Interview coaching (ESN & final clients)', desc: 'HR preparation, mock interviews, profile enhancement, stress management and professional communication.' },
-        { title: 'Payroll portage & Full Remote IT', desc: 'Full administrative handling for freelancers (client contract, invoicing, social contributions) and provision of Tunisian remote developers with competitive daily rates.' }
+        { title: 'Professional Visas', desc: 'Project analysis, full file structuring, and compliance check for Talent, Salaried, or Business visas.' },
+        { title: 'Payroll Portage', desc: 'Full administrative management, French employment contracts, invoicing, and social coverage for consultants and companies.' },
+        { title: 'Candidate Coaching', desc: 'CV/LinkedIn optimization and intensive interview preparation to maximize your recruitment chances.' },
+        { title: 'Full Remote Recruitment', desc: 'Sourcing of qualified talents and implementation of secure and compliant remote work solutions.' },
+        { title: 'Payroll Outsourcing', desc: 'Complete payroll management, personnel administration (ADP), and social compliance for companies in France.' }
       ],
       cta: 'Get a quote'
     },
     contact: {
       badge: 'NOVISA contact',
       title: 'Discuss your project with NOVISA',
-      subtitle: 'Describe your mobility, payroll portage or full remote IT project and we will get back to you shortly.',
+      subtitle: 'Describe your project (Visas, Portage, Coaching, Recruitment, or Payroll) and we will get back to you shortly.',
       labels: { name: 'Full name *', email: 'Email *', phone: 'Phone', city: 'City', type: 'Service type *', message: 'Message' },
       placeholders: { name: 'Your full name', email: 'you@email.com', phone: '+216 29 466 456', city: 'Tunis, Sfax, Sousse...', message: 'Briefly describe your project and needs...' },
-      options: ['Talent / Employee / Business visa', 'Interview coaching', 'Payroll portage / Full Remote IT', 'Other support', 'Other'],
+      options: ['Professional Visas', 'Payroll Portage', 'Candidate Coaching', 'Full Remote Recruitment', 'Payroll Outsourcing', 'Other'],
       consent: 'I agree to be contacted by NOVISA and have read the privacy policy.',
       submit: 'Send my request'
     },
     footer: {
-      desc: 'Visa support, professional coaching, payroll portage and provision of full remote IT talents.',
+      desc: 'International mobility expert: Visas, Payroll portage, Coaching, Remote recruitment, and Payroll outsourcing.',
       nav: {
         about: 'About',
         services: 'Services',
@@ -396,7 +394,21 @@ export const i18n: Record<Locale, Translations> = {
     serviceDetails: {
       interested: 'Interested in this service?',
       contactText: 'Contact us now to start your procedure.',
-      contactBtn: 'Contact us'
+      contactBtn: 'Contact us',
+      targetTitle: 'Target Audience',
+      offerTitle: 'What we offer',
+      notDoneTitle: 'What we do not do',
+      benefitsTitle: 'Your benefits',
+      processTitle: 'Support Process'
+    },
+    references: {
+      title: 'They trust us',
+      subtitle: 'Companies that rely on our HR and mobility expertise.',
+      companies: [
+        { name: 'CAS International', desc: 'Consulting & Advisory Services' },
+        { name: 'SAFARI TECHNOLOGIES', desc: 'Technological Solutions' },
+        { name: 'INNOYA SERVICES', desc: 'Innovative Services' }
+      ]
     },
     faq: {
       procedureTitle: 'Support and procedure',
@@ -416,21 +428,24 @@ export const i18n: Record<Locale, Translations> = {
   ar: {
     header: { brand: 'NOVISA', services: 'الخدمات', about: 'نبذة', documents: 'الوثائق', pricing: 'الأسعار والآجال', engagements: 'الالتزامات', cta: 'اتصل بنا', switcher: 'اللغة' },
     hero: {
-      badge: 'تنقل دولي – كوتشينغ مهني – بورتاج سالاريال – Full Remote IT',
-      title: 'NOVISA شريككم في مشاريع التنقل والمهام المعلوماتية',
-      subtitle: 'مرافقة مهنية لتأشيراتكم، كوتشينغ، بورتاج سالاريال ومهام IT عن بعد',
+      badge: 'بورتاج سالاريال ومرافقة إدارية دولية',
+      title: 'NOVISA — انطلق بمسيرتك المهنية في فرنسا',
+      subtitle: 'خبرة شاملة في البورتاج سالاريال، التأشيرات المهنية، والمرافقة في الموارد البشرية لتأمين مشروع تنقلك الدولي.',
       cta1: 'اتصل بنا',
       cta2: 'اكتشف خدماتنا',
-      servicesTitle: 'مجالات خبرتنا الستة',
-      servicesSubtitle: 'حلول شاملة لتنقلكم المهني ومشاريعكم المعلوماتية',
+      servicesTitle: 'خبرتنا في خدمة تنقلكم',
+      servicesSubtitle: 'حلول متوافقة مع القانون الفرنسي للملفات الدولية',
       discoverBtn: 'اعرف المزيد',
+      description: 'تتخصص NOVISA في إنشاء حلول بورتاج سالاريال متوافقة مع القانون الفرنسي للملفات الدولية، بالإضافة إلى معالجة وإعداد ملفات التأشيرات المهنية لفرنسا.',
+      mission: 'نرافق المرشحين الدوليين والفريلانسرز والشركات الدولية في إجراءاتهم الإدارية لتأمين مشاريعهم المهنية في فرنسا.',
+      disclaimer1: '⚠️ تتدخل NOVISA حصريًا في الجوانب الإدارية والتعاقدية والتنظيمية.',
+      disclaimer2: '⚠️ لا تقدم NOVISA عروض عمل ولا تتدخل في قرارات السلطات الفرنسية.',
       servicesSummary: [
-        'هيكلة مهنية لملف التأشيرة بعد موعد TLS',
-        'مرافقة كاملة لجميع أنواع تأشيرة الموهبة (البطاقة الزرقاء، موظف مؤهل، رائد أعمال)',
-        'إعداد ملف تأشيرة العمل مع تناسق OFII والمشروع المهني',
-        'هيكلة الملف للمهام المهنية في الخارج',
-        'تحضير كامل للمقابلات مع ESN والعملاء النهائيين مع محاكاة',
-        'إدارة إدارية كاملة للفريلانس وتوفير مواهب IT'
+        'مرافقة كاملة لجميع أنواع التأشيرات المهنية (موهبة، عمل، أعمال)',
+        'حلول بورتاج سالاريال آمنة ومتوافقة مع القانون الفرنسي',
+        'تدريب مخصص للنجاح في المقابلات وإبراز ملفكم الشخصي',
+        'توظيف وإدارة المواهب الدولية للمهمات عن بعد بالكامل',
+        'تعهيد كامل للرواتب وإدارة شؤون الموظفين (ADP)'
       ]
     },
     services: {
@@ -440,82 +455,69 @@ export const i18n: Record<Locale, Translations> = {
       link: 'اتصل بنا →',
       cards: [
         {
-          title: 'مرافقة التأشيرة – دورنا',
-          intro:
-            'تتدخل NOVISA بعد حجز موعد TLS / القنصلية، ومن الضروري الاتصال بنا قبل أسبوع على الأقل عندما تكون كل العناصر الأولية متوفرة.',
-          bullets: [
-            'هيكلة ملف مهني ومتناسق',
-            'إبراز المهارات والخبرات',
-            'توضيح المشروع ككل',
-            'التحقق من التناسق قبل الإيداع',
-          ],
-          footer: 'لا نقدّم أي وثائق رسمية.',
-        },
-        {
-          title: 'تأشيرة موهبة – مرافقة',
-          intro: 'تواكب NOVISA جميع أنواع تأشيرة الموهبة:',
-          bullets: [
-            'موظف مؤهل',
-            'البطاقة الزرقاء الأوروبية (CBE)',
-            'موظف في مهمة',
-            'باحث',
-            'حامل مشروع / رائد أعمال',
-            'ممثل قانوني',
-            'مهن فنية',
-          ],
-          footer: 'دورنا هو إعطاء رؤية وتناسق للمشاريع وملفات الترشح.',
-        },
-        {
-          title: 'تأشيرة عمل',
-          intro:
-            'نرشد الأجراء بعد الحصول على الترخيص وتحديد موعد TLS / القنصلية، من خلال هيكلة الملف لضمان التناسق مع المشروع المهني والإجراءات الإدارية (OFII):',
-          bullets: [
-            'هيكلة الملف',
-            'توضيح التناسق بين العقد / المشروع / المسار المهني',
-            'شرح المراحل الرئيسية (OFII...)',
-            'التحضير لتقديم مهني',
-          ],
-        },
-        {
-          title: 'تأشيرة أعمال',
-          intro:
-            'بالنسبة للأجراء الموفدين في مهمة إلى الخارج لدى عميل أو فرع، تواكب NOVISA إعداد الملف من أجل:',
-          bullets: [
-            'هيكلة الملف',
-            'توضيح موضوع المهمة',
-            'تقديم مترشح بطريقة واضحة ومتناسقة',
-          ],
-        },
-        {
-          title: 'كوتشينغ – مقابلات',
-          intro:
-            'نحضّر المترشحين للنجاح في مقابلاتهم مع شركات الخدمات الرقمية (ESN) والعملاء النهائيين من خلال العمل على الجوانب الموارد البشرية والعرض والتواصل المهني:',
-          bullets: [
-            'تحضير الموارد البشرية',
-            'محاكاة مقابلة',
-            'إبراز المسار والمهارات',
-            'إدارة الضغط والتواصل المهني',
-          ],
+          title: 'التأشيرات المهنية',
+          shortDesc: 'إرشاد ومرافقة ملفات التأشيرة للعمل بشكل قانوني في فرنسا.',
+          intro: 'ترافق NOVISA الشركات الدولية والمترشحين المهنيين في إرشاد وتكوين ملفات التأشيرة للعمل بشكل قانوني في فرنسا.',
+          warning: 'نحن لا نوفر وظائف ولا نضمن الحصول على التأشيرة. نتدخل حصرياً في الجوانب الإدارية والتنظيمية.',
+          target: ['الشركات الأجنبية: إرسال موظفين إلى فرنسا', 'المترشحون المؤهلون: إطارات، خبراء، مواهب دولية', 'الملفات التي تتطلب تأشيرة عمل أو موهبة أو أعمال'],
+          offer: ['تأشيرة عمل: للموظفين بعقد فرنسي', 'تأشيرة موهبة: للملفات المؤهلة والخبراء', 'تأشيرة أعمال: للمهمات المؤقتة أو التنقيب'],
+          process: ['تحليل الملف وتحديد نوع التأشيرة المناسب', 'إعداد كامل للملف الإداري', 'التحقق من مطابقة الوثائق', 'التنسيق مع صاحب العمل أو شركة البورتاج', 'المتابعة حتى الإيداع لدى السلطات'],
+          notDone: ['نحن لا نوفر وظائف', 'نحن لا نقرر في نتيجة التأشيرة', 'نحن لا نقدم وعوداً بالتوظيف'],
+          benefits: ['مسار واضح وآمن', 'ربح كبير للوقت', 'أمان قانوني ومطابقة تامة', 'مرافقة دولية مخصصة'],
+          cta: 'طلب دراسة مخصصة'
         },
         {
           title: 'بورتاج سالاريال',
-          intro:
-            'نرافق الفريلانس بدون شركة قانونية عبر التكفّل الكامل بالإدارة لتأمين العلاقة مع العميل:',
-          bullets: [
-            'عقد مع العميل',
-            'الفوترة وتحويل العائدات',
-            'دفع مساهمات CNSS',
-            'تسيير إداري كامل',
-          ],
+          shortDesc: 'حل آمن لتوظيف أو فوترة الخدمات في فرنسا دون إنشاء شركة.',
+          intro: 'ترافق NOVISA الشركات الدولية والمستشارين المهنيين في وضع حلول بورتاج سالاريال متوافقة مع القانون الفرنسي.',
+          target: ['الشركات الأجنبية: التوظيف في فرنسا دون كيان محلي', 'المستشارون الدوليون: العمل لصالح عملاء فرنسيين', 'الموظفون المغتربون: وضعية موظف مع تغطية كاملة'],
+          offer: ['المطابقة القانونية: عقد عمل فرنسي (CDI/CDD)', 'الضمان الاجتماعي وتغطية صحية كاملة', 'فوترة مبسطة وإدارة الأعباء', 'واجهة موحدة: بورتاج + إداري + تأشيرات', 'سرعة وفعالية في مسارات B2B'],
+          process: ['تحليل الاحتياجات (شركة أو مستشار)', 'إعداد عقد البورتاج المناسب', 'الإعداد الإداري والتصاريح', 'فوترة العميل وتحويلها إلى راتب', 'متابعة مستمرة، مساعدة وتقارير'],
+          notDone: ['نحن لا نوفر وظائف أو مهمات', 'نحن لا نعوض الإدارة الاستراتيجية', 'البورتاج لا يضمن تلقائياً الحصول على تأشيرة'],
+          benefits: ['مرونة: التوظيف دون إنشاء فرع', 'تقليل المخاطر الإدارية', 'متابعة كاملة للموظف', 'تحسين التكاليف والآجال'],
+          cta: 'تأمين مهماتي'
         },
+        {
+          title: 'تدريب المترشحين',
+          shortDesc: 'تحسين الملف الشخصي والتحضير للمقابلات في السوق الفرنسية.',
+          intro: 'ترافق NOVISA المترشحين الدوليين الذين يواجهون صعوبات في الحصول على مقابلات أو إبراز ملفاتهم لدى الشركات الفرنسية.',
+          target: ['المترشحون الراغبون في العمل قانونياً في فرنسا', 'المهنيون المؤهلون الساعون لتحسين تأثيرهم', 'الأشخاص في وضعية بورتاج الراغبون في تعزيز فرصهم'],
+          offer: ['تحليل وتحسين السيرة الذاتية وملف LinkedIn', 'تحضير موجه لمقابلات العمل', 'تقنيات لإبراز الخبرة الدولية', 'نصائح حول التواصل المهني'],
+          notDone: ['نحن لا نوفر وظائف', 'نحن لا نضمن التوظيف', 'نحن لا نقوم بالتوظيف المباشر'],
+          benefits: ['تدريب موجه وملموس', 'نهج عملي للمقابلات', 'اكتساب ثقة فورية', 'تكملة مثالية لإجراءات التأشيرة والبورتاج'],
+          cta: 'تعزيز ترشحي'
+        },
+        {
+          title: 'التوظيف عن بعد',
+          shortDesc: 'استقطاب وإدارة المواهب الدولية للمهمات عن بعد.',
+          intro: 'ترافق NOVISA الشركات الدولية في توظيف وإدارة المواهب عن بعد للمهمات في فرنسا.',
+          target: ['الشركات الراغبة في توظيف مواهب في فرنسا', 'الشركات الناشئة والمتوسطة الباحثة عن ملفات عن بعد', 'الشركات التي تحتاج إلى حل متكامل'],
+          offer: ['استقطاب واختيار المترشحين المؤهلين', 'تقييم المهارات ومدى ملاءمتها للمهمة', 'وضع العقود عبر البورتاج سالاريال', 'إدارة إدارية كاملة (رواتب، ضمان اجتماعي)', 'متابعة وتقارير دورية للشركة'],
+          notDone: ['نحن لا نوفر موظفين داخليين', 'نحن لا نضمن الأداء الفردي', 'نحن لا نعوض الإدارة الداخلية'],
+          benefits: ['وصول سريع لمواهب مؤهلة', 'ضمان المطابقة القانونية والإدارية', 'مرونة وتقليل مخاطر الموارد البشرية', 'حل متكامل: توظيف + بورتاج'],
+          cta: 'التوظيف عن بعد'
+        },
+        {
+          title: 'تعهيد الرواتب',
+          shortDesc: 'إدارة كاملة للرواتب وشؤون الموظفين في فرنسا.',
+          intro: 'ترافق NOVISA الشركات العاملة في فرنسا في الإدارة الكاملة للرواتب وإدارة شؤون الموظفين (ADP).',
+          target: ['الشركات المقيمة في فرنسا أو ذات نشاط محلي', 'الشركات الناشئة والمتوسطة وفروع الشركات الدولية', 'الشركات التي تسعى للمطابقة الاجتماعية'],
+          offer: ['قسائم رواتب مطابقة (Isapaye, Syntec...)', 'التصاريح الاجتماعية (URSSAF، التقاعد، التأمين)', 'الإدارة الإدارية (عقود، إجازات، غيابات)', 'المساعدة في حالة التدقيق الإداري', 'تقارير موارد بشرية كاملة ومتابعة دقيقة'],
+          notDone: ['لا يعوض قرارات الموارد البشرية الاستراتيجية', 'لا يدير الجوانب المالية خارج الرواتب', 'لا يدير الموظفين خارج الأراضي الفرنسية'],
+          benefits: ['أمان قانوني ومطابقة كاملة', 'ربح الوقت وزيادة الإنتاجية', 'التكيف مع الاتفاقيات الجماعية', 'خبرة تقنية (برنامج Isapaye)'],
+          cta: 'تعهيد رواتبي'
+        }
       ]
     },
 
     about: {
       badge: 'نبذة',
       title: 'NOVISA، متخصصة في التنقل المهني',
-      subtitle: 'تنقل دولي، كوتشينغ، بورتاج سالاريال و Full Remote IT.',
-      paragraph: 'ترافق NOVISA المهنيين والشركات الدولية في جميع جوانب التنقل المهني والمهام المعلوماتية: إعداد ملفات التأشيرة (موهبة، عمل، أعمال)، تدريب على المقابلات، بورتاج سالاريال وتوفير مطوري IT تونسيين عن بعد بالكامل. مهمتنا هي توفير رؤية واضحة لمشاريعكم، هيكلة ملفات الترشح، إبراز مهاراتكم ومرافقتكم بشكل مهني ومتناسق في كل مرحلة. NOVISA ليست تابعة للقنصليات ولا لـ TLS ولا تقدّم وثائق رسمية؛ يقتصر دورنا على هيكلة الملف وضمان تناسقه.'
+      subtitle: 'تنقل دولي، كوتشينغ، بورتاج سالاريال، توظيف عن بعد وتعهيد الرواتب.',
+      paragraph: 'ترافق NOVISA المهنيين والشركات الدولية في جميع جوانب التنقل المهني وخدمات الموارد البشرية: إعداد ملفات التأشيرة (موهبة، عمل، أعمال)، تدريب على المقابلات، بورتاج سالاريال، توظيف المواهب عن بعد وتعهيد الرواتب. مهمتنا هي توفير رؤية واضحة لمشاريعكم، تأمين إجراءاتكم الإدارية وإبراز مهاراتكم للنجاح في اندماجكم في السوق الفرنسية.',
+      expertiseTitle: 'خبرتنا',
+      missionTitle: 'مهمتنا',
+      importantTitle: 'نقاط مهمة'
     },
     engagements: {
       badge: 'الالتزامات والدور',
@@ -558,24 +560,26 @@ export const i18n: Record<Locale, Translations> = {
       title: 'عروض مكيّفة لاحتياجاتكم',
       subtitle: 'الرسوم تختلف حسب نوع التأشيرة، مستوى الكوتشينغ وخدمات البورتاج / Full Remote IT. عرض سعر مخصص عند الطلب.',
       cards: [
-        { title: 'مرافقة تأشيرة موهبة / عمل / أعمال', desc: 'تحليل المشروع، هيكلة شاملة للملف، إبراز المسار ومراجعة التناسق قبل الإيداع لدى TLS / القنصلية.' },
-        { title: 'تدريب على المقابلات (ESN والعملاء النهائيين)', desc: 'تحضير موارد بشرية، محاكاة مقابلات، إبراز الملف، إدارة الضغط والتواصل المهني.' },
-        { title: 'بورتاج سالاريال و Full Remote IT', desc: 'تكفّل إداري كامل بالنسبة للفريلانس (عقد مع العميل، الفوترة، دفع الاشتراكات الاجتماعية) وتوفير مطوري IT تونسيين عن بعد مع معدل يومي تنافسي.' }
+        { title: 'التأشيرات المهنية', desc: 'تحليل المشروع، هيكلة شاملة للملف والتحقق من المطابقة لتأشيرات الموهبة، العمل أو الأعمال.' },
+        { title: 'بورتاج سالاريال', desc: 'إدارة إدارية كاملة، عقود عمل فرنسية، فوترة وتغطية اجتماعية للمستشارين والشركات.' },
+        { title: 'تدريب المترشحين', desc: 'تحسين السيرة الذاتية/LinkedIn وتحضير مكثف للمقابلات لزيادة فرص التوظيف.' },
+        { title: 'التوظيف عن بعد', desc: 'استقطاب المواهب المؤهلة ووضع حلول عمل عن بعد آمنة ومتوافقة.' },
+        { title: 'تعهيد الرواتب', desc: 'إدارة كاملة للرواتب، شؤون الموظفين (ADP) والمطابقة الاجتماعية للشركات في فرنسا.' }
       ],
       cta: 'احصل على عرض سعر'
     },
     contact: {
       badge: 'اتصال NOVISA',
       title: 'تحدث عن مشروعك مع NOVISA',
-      subtitle: 'صف مشروع التنقل أو البورتاج سالاريال أو Full Remote IT وسنعود إليك في أقرب وقت.',
+      subtitle: 'صف مشروعك (تأشيرات، بورتاج، تدريب، توظيف أو رواتب) وسنعود إليك في أقرب وقت.',
       labels: { name: 'الاسم الكامل *', email: 'البريد الإلكتروني *', phone: 'الهاتف', city: 'المدينة', type: 'نوع الخدمة *', message: 'الرسالة' },
       placeholders: { name: 'اسمك الكامل', email: 'you@email.com', phone: '+216 29 466 456', city: 'تونس، صفاقس، سوسة...', message: 'اشرح بإيجاز مشروعك واحتياجاتك...' },
-      options: ['تأشيرة موهبة / عمل / أعمال', 'تدريب على المقابلات', 'بورتاج سالاريال / Full Remote IT', 'مرافقة أخرى', 'أخرى'],
+      options: ['التأشيرات المهنية', 'بورتاج سالاريال', 'تدريب المترشحين', 'التوظيف عن بعد', 'تعهيد الرواتب', 'أخرى'],
       consent: 'أوافق على الاتصال بي من طرف NOVISA وقد قرأت سياسة الخصوصية.',
       submit: 'إرسال الطلب'
     },
     footer: {
-      desc: 'مرافقة للتأشيرات، كوتشينغ مهني، بورتاج سالاريال وتوفير مطوري IT تونسيين عن بعد بالكامل.',
+      desc: 'خبير في التنقل الدولي: تأشيرات، بورتاج سالاريال، كوتشينغ، توظيف عن بعد وتعهيد الرواتب.',
       nav: {
         about: 'نبذة',
         services: 'الخدمات',
@@ -597,7 +601,21 @@ export const i18n: Record<Locale, Translations> = {
     serviceDetails: {
       interested: 'هل أنت مهتم بهذه الخدمة؟',
       contactText: 'اتصل بنا الآن لبدء إجراءاتك.',
-      contactBtn: 'اتصل بنا'
+      contactBtn: 'اتصل بنا',
+      targetTitle: 'الجمهور المستهدف',
+      offerTitle: 'ما نقدمه',
+      notDoneTitle: 'ما لا نقوم به',
+      benefitsTitle: 'مميزاتك',
+      processTitle: 'مسار المرافقة'
+    },
+    references: {
+      title: 'شركاؤنا',
+      subtitle: 'شركات تعتمد على خبرتنا في الموارد البشرية والتنقل.',
+      companies: [
+        { name: 'CAS International', desc: 'خدمات الاستشارة والتوجيه' },
+        { name: 'SAFARI TECHNOLOGIES', desc: 'الحلول التكنولوجية' },
+        { name: 'INNOYA SERVICES', desc: 'الخدمات المبتكرة' }
+      ]
     },
     faq: {
       procedureTitle: 'المرافقة والإجراءات',

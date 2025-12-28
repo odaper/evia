@@ -1,44 +1,11 @@
 import type { Translations } from '../i18n'
 
-function getServiceIcon(index: number, colorVar: string): string {
-  const icons = [
-    // Visa Support - Calendar/Document
-    `<rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>`,
-    // Talent Visa - Award/Star
-    `<circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>`,
-    // Employee Visa - Briefcase
-    `<rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>`,
-    // Business Visa - Globe
-    `<circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>`,
-    // Coaching - Users/People
-    `<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path>`,
-    // Portage Salarial - Layers/Stack
-    `<polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline>`
-  ]
-
-  const iconPath = icons[index] || icons[0]
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(${colorVar})"><${iconPath}</svg>`
-}
-
 export function renderHero(t: Translations): string {
-  const colors = ['--logo-blue', '--logo-teal', '--logo-orange']
-  const servicesSummary = t.hero.servicesSummary || []
-  const serviceTitles = [
-    t.services.cards[0]?.title || 'Accompagnement visa',
-    t.services.cards[1]?.title || 'Visa Talent',
-    t.services.cards[2]?.title || 'Visa Salarié',
-    t.services.cards[3]?.title || 'Visa d\'affaire',
-    t.services.cards[4]?.title || 'Coaching',
-    t.services.cards[5]?.title || 'Portage salarial'
-  ]
-
   return `
     <div class="animated-bg">
       <div class="orb orb-blue" style="width:600px;height:600px;top:-10%;left:-10%;opacity:0.5"></div>
       <div class="orb orb-teal" style="width:500px;height:500px;top:40%;right:-5%;opacity:0.4"></div>
       <div class="orb orb-orange" style="width:400px;height:400px;bottom:-10%;left:20%;opacity:0.4"></div>
-      <div class="orb orb-blue" style="width:400px;height:400px;top:20%;right:30%;opacity:0.3"></div>
-      <div class="orb orb-teal" style="width:300px;height:300px;bottom:30%;right:10%;opacity:0.3"></div>
       
       <div class="particles">
         <div class="particle"></div>
@@ -49,42 +16,79 @@ export function renderHero(t: Translations): string {
         <div class="particle"></div>
         <div class="particle"></div>
         <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
+      </div>
+
+      <!-- Modern Wavy Background Lines -->
+      <div class="hero-waves">
+        <svg viewBox="0 0 1440 800" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M-100 600C200 500 400 750 720 600C1040 450 1240 700 1540 600" stroke="url(#gradient1)" stroke-width="2" opacity="0.4">
+            <animate attributeName="d" dur="10s" repeatCount="indefinite" values="M-100 600C200 500 400 750 720 600C1040 450 1240 700 1540 600; M-100 650C250 550 450 800 720 650C990 500 1190 750 1540 650; M-100 600C200 500 400 750 720 600C1040 450 1240 700 1540 600" />
+          </path>
+          <path d="M-100 500C250 400 450 650 720 500C990 350 1190 600 1540 500" stroke="url(#gradient2)" stroke-width="2" opacity="0.3">
+            <animate attributeName="d" dur="12s" repeatCount="indefinite" values="M-100 500C250 400 450 650 720 500C990 350 1190 600 1540 500; M-100 550C300 450 500 700 720 550C940 400 1140 650 1540 550; M-100 500C250 400 450 650 720 500C990 350 1190 600 1540 500" />
+          </path>
+          <defs>
+            <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="var(--logo-blue)" />
+              <stop offset="50%" stop-color="var(--logo-teal)" />
+              <stop offset="100%" stop-color="var(--logo-blue)" />
+            </linearGradient>
+            <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="var(--logo-teal)" />
+              <stop offset="50%" stop-color="var(--logo-orange)" />
+              <stop offset="100%" stop-color="var(--logo-teal)" />
+            </linearGradient>
+          </defs>
+        </svg>
       </div>
       
       <div class="hero-grid-overlay"></div>
     </div>
+
     <div class="container">
       <div class="hero-content-centered">
-        <div class="hero-text-center">
-          <h1 style="margin-top:20px;animation:fadeInUp 0.8s ease-out forwards;opacity:0;animation-delay:0.3s">${t.hero.title}</h1>
-          <p style="margin-top:16px;font-size:18px;animation:fadeInUp 0.8s ease-out forwards;opacity:0;animation-delay:0.4s" class="muted">${t.hero.subtitle}</p>
-        </div>
-        
-        <div class="hero-services-section" style="animation:fadeInUp 0.8s ease-out forwards;opacity:0;animation-delay:0.5s">
-          <div class="hero-services-header">
-            <h2>${t.hero.servicesTitle}</h2>
-            <p class="muted">${t.hero.servicesSubtitle}</p>
+        <!-- Trust Badge -->
+        <div class="hero-trust-badge" style="animation: fadeInUp 0.8s ease-out forwards; opacity: 0; animation-delay: 0.2s;">
+          <div class="avatar-group">
+            <div class="avatar" style="background: var(--logo-blue)"></div>
+            <div class="avatar" style="background: var(--logo-teal)"></div>
+            <div class="avatar" style="background: var(--logo-orange)"></div>
           </div>
+          <div class="rating-info">
+            <span class="stars">★★★★★</span>
+            <span class="rating-text">4.9/5 par nos clients</span>
+          </div>
+        </div>
+
+        <div class="hero-text-center">
+          <h1 class="hero-title-main">${t.hero.title}</h1>
+          <p class="hero-subtitle-main">${t.hero.subtitle}</p>
           
-          <div class="hero-services-grid">
-            ${servicesSummary.map((summary: string, index: number) => {
-    const colorVar = colors[index % colors.length]
-    return `
-                <article class="hero-service-card hero-service-card-compact" style="animation-delay: ${0.6 + index * 0.1}s;" data-scroll="services">
-                  <div class="hero-service-icon" style="border-color: var(${colorVar});">
-                    ${getServiceIcon(index, colorVar)}
-                  </div>
-                  <h3 style="color: var(${colorVar});">${serviceTitles[index]}</h3>
-                </article>
-              `
-  }).join('')}
+          <div class="hero-actions" style="margin-top: 48px; animation: fadeInUp 0.8s ease-out forwards; opacity: 0; animation-delay: 0.5s;">
+            <a href="#services" class="btn btn-primary btn-lg btn-glow" data-scroll="services">
+              ${t.hero.cta2}
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 8px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+
+          <!-- Trust Stats Section -->
+          <div class="hero-stats-minimal" style="display: flex; justify-content: center; gap: 60px; margin-top: 80px; animation: fadeInUp 0.8s ease-out forwards; opacity: 0; animation-delay: 0.6s;">
+            <div class="stat-item">
+              <span class="stat-number">100+</span>
+              <span class="stat-label">Accompagnements</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">98%</span>
+              <span class="stat-label">Satisfaction</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">24/7</span>
+              <span class="stat-label">Support Expert</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   `
 }
+

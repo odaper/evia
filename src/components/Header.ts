@@ -19,10 +19,9 @@ export function renderHeader(t: Translations, locale: Locale): string {
         </div>
         <a href="#about">${t.header.about}</a>
         <a href="#services">${t.header.services}</a>
-        <a href="#tarifs">${t.header.pricing}</a>
+        <a href="#references">${t.references.title}</a>
         <a href="#documents">${t.header.documents}</a>
-        
-      </nav>
+        <a href="#contact">${t.header.cta}</a>
       <label class="lang-selector">
           <span class="sr-only">${t.header.switcher}</span>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lang-icon"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>

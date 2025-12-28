@@ -7,7 +7,9 @@ import { renderAbout } from './components/AboutFaq'
 import { renderContactForm } from './components/ContactForm'
 import { i18n, detectLocale, setDocumentDirection, type Locale, type Translations } from './i18n'
 import { renderDocuments } from './components/Documents'
-import { renderPricing } from './components/Pricing'
+
+
+import { renderReferences } from './components/References'
 
 let currentLocale: Locale = detectLocale()
 function getT(): Translations { return i18n[currentLocale] }
@@ -17,6 +19,7 @@ function renderAll() {
   const t = getT()
   const headerEl = document.getElementById('header')
   if (headerEl) headerEl.innerHTML = renderHeader(t, currentLocale)
+
   const footerEl = document.getElementById('footer')
   if (footerEl) footerEl.innerHTML = renderFooter(t)
 
@@ -26,21 +29,17 @@ function renderAll() {
   const servicesRoot = document.getElementById('services-root')
   if (servicesRoot) servicesRoot.innerHTML = renderServiceCards(t)
 
-
-
   const aboutRoot = document.getElementById('about-root')
   if (aboutRoot) aboutRoot.innerHTML = renderAbout(t)
 
-
+  const referencesRoot = document.getElementById('references-root')
+  if (referencesRoot) referencesRoot.innerHTML = renderReferences(t)
 
   const contactRoot = document.getElementById('contact-root')
   if (contactRoot) contactRoot.innerHTML = renderContactForm(t)
 
   const documentsRoot = document.getElementById('documents-root')
   if (documentsRoot) documentsRoot.innerHTML = renderDocuments(t)
-
-  const pricingRoot = document.getElementById('pricing-root')
-  if (pricingRoot) pricingRoot.innerHTML = renderPricing(t)
 
   // bind lang switch
   document.getElementById('lang-switch')?.addEventListener('change', (e) => {
@@ -102,52 +101,118 @@ document.addEventListener('click', (e) => {
     if (card && container) {
       const title = card.querySelector('.data-title')?.textContent
       const intro = card.querySelector('.data-intro')?.textContent
-      const bulletsJson = card.querySelector('.data-bullets')?.textContent
-      const footer = card.querySelector('.data-footer')?.textContent
+      const warning = card.querySelector('.data-warning')?.textContent
+      const targetJson = card.querySelector('.data-target')?.textContent
+      const offerJson = card.querySelector('.data-offer')?.textContent
+      const processJson = card.querySelector('.data-process')?.textContent
+      const notDoneJson = card.querySelector('.data-not-done')?.textContent
+      const benefitsJson = card.querySelector('.data-benefits')?.textContent
+      const ctaText = card.querySelector('.data-cta')?.textContent
       const iconHtml = card.querySelector('.icon')?.innerHTML
 
-      let bulletsHtml = ''
-      if (bulletsJson) {
-        try {
-          const bullets = JSON.parse(bulletsJson)
-          bulletsHtml = bullets.map((b: string) => `<li>${b}</li>`).join('')
-        } catch (e) {
-          bulletsHtml = ''
-        }
+      const parse = (json: string | undefined) => {
+        try { return json ? JSON.parse(json) : [] } catch { return [] }
       }
+
+      const targets = parse(targetJson)
+      const offers = parse(offerJson)
+      const processes = parse(processJson)
+      const notDones = parse(notDoneJson)
+      const benefits = parse(benefitsJson)
 
       const colorVar = btn.getAttribute('data-color-var') || '--logo-blue'
 
       container.innerHTML = `
-        <div class="service-details-card">
+        <div class="service-details-card scroll-animate-scale animate-in">
           <div class="blobs" style="border-radius: var(--radius-lg);">
-            <div class="blob one" style="background: radial-gradient(circle at 30% 30%, var(${colorVar}), transparent 70%); opacity: 0.15;"></div>
-            <div class="blob two" style="background: radial-gradient(circle at 70% 40%, var(${colorVar}), transparent 70%); opacity: 0.15; animation-delay: 2s;"></div>
-            <div class="blob three" style="background: radial-gradient(circle at 50% 50%, var(${colorVar}), transparent 70%); opacity: 0.1; animation-delay: 4s;"></div>
+            <div class="blob one" style="background: radial-gradient(circle at 30% 30%, var(${colorVar}), transparent 70%); opacity: 0.1;"></div>
+            <div class="blob two" style="background: radial-gradient(circle at 70% 40%, var(${colorVar}), transparent 70%); opacity: 0.1; animation-delay: 2s;"></div>
           </div>
-          
-          <div class="service-details-header" style="position: relative; z-index: 1;">
-            <div class="service-details-icon" style="border-color: var(${colorVar}); background: rgba(255,255,255,0.5);">
-              ${iconHtml}
-            </div>
-            <div class="service-details-title">
-              <h3 style="color: var(${colorVar});">${title}</h3>
-              <p>${intro}</p>
-            </div>
-          </div>
-          
-          <div class="service-details-content" style="position: relative; z-index: 1;">
-            <div class="service-details-bullets">
-              <ul>${bulletsHtml}</ul>
-              ${footer ? `<p class="muted small" style="margin-top: 20px;">${footer}</p>` : ''}
-            </div>
-            
-            <div class="service-details-actions">
-              <h4 style="color: #111; font-weight: 800; font-size: 1.2rem;">${getT().serviceDetails.interested}</h4>
-              <p>${getT().serviceDetails.contactText}</p>
-              <a href="#contact" class="btn btn-primary" data-scroll="contact" style="width: 100%; justify-content: center;">
-                ${getT().serviceDetails.contactBtn}
-              </a>
+
+          <div style="position: relative; z-index: 1;">
+            <!-- Top Header Row -->
+            <header class="service-details-header-row" style="display: flex; justify-content: space-between; align-items: center; gap: 30px; margin-bottom: 40px; padding-bottom: 30px; border-bottom: 1px solid rgba(0,0,0,0.05);">
+              <div style="display: flex; align-items: center; gap: 24px;">
+                <div class="service-details-icon" style="border-color: var(${colorVar}); width: 64px; height: 64px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 2px solid; background: white;">
+                  ${iconHtml}
+                </div>
+                <h3 style="color: var(${colorVar}); margin: 0; font-size: 2rem; font-weight: 800;">${title}</h3>
+              </div>
+              <div class="service-details-header-cta" style="display: flex; align-items: center; gap: 20px;">
+                <span class="cta-label" style="color: #666; font-weight: 600; font-size: 1rem;">${ctaText}</span>
+                <a href="#contact" class="btn btn-primary" data-scroll="contact" style="padding: 12px 32px; white-space: nowrap;">
+                  ${getT().serviceDetails.contactBtn}
+                </a>
+              </div>
+            </header>
+
+            <!-- Main Content Area -->
+            <div class="service-details-content">
+              <p class="intro-text" style="font-size: 1.1rem; line-height: 1.6; color: #444; margin-bottom: 24px;">${intro}</p>
+              ${warning ? `<div class="warning-box" style="border-left: 4px solid var(--logo-orange); background: rgba(236, 164, 0, 0.05); padding: 16px 24px; border-radius: 8px; margin-bottom: 40px; font-size: 1rem; color: #555;">${warning}</div>` : ''}
+              
+              <div class="service-details-grid-modern" style="display: grid; gap: 40px;">
+                <div class="details-row" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+                  <div class="details-section">
+                    <h4 style="display: flex; align-items: center; gap: 12px; color: var(${colorVar}); margin-bottom: 20px; font-size: 1.2rem; font-weight: 700;">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                      ${getT().serviceDetails.targetTitle}
+                    </h4>
+                    <ul class="modern-list">
+                      ${targets.map((t: string) => `<li>${t}</li>`).join('')}
+                    </ul>
+                  </div>
+
+                  <div class="details-section">
+                    <h4 style="display: flex; align-items: center; gap: 12px; color: var(${colorVar}); margin-bottom: 20px; font-size: 1.2rem; font-weight: 700;">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      ${getT().serviceDetails.offerTitle}
+                    </h4>
+                    <ul class="modern-list">
+                      ${offers.map((o: string) => `<li>${o}</li>`).join('')}
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="details-row" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+                  <div class="details-section">
+                    <h4 style="display: flex; align-items: center; gap: 12px; color: var(${colorVar}); margin-bottom: 20px; font-size: 1.2rem; font-weight: 700;">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+                      ${getT().serviceDetails.notDoneTitle}
+                    </h4>
+                    <ul class="modern-list not-done">
+                      ${notDones.map((n: string) => `<li>${n}</li>`).join('')}
+                    </ul>
+                  </div>
+
+                  <div class="details-section">
+                    <h4 style="display: flex; align-items: center; gap: 12px; color: var(${colorVar}); margin-bottom: 20px; font-size: 1.2rem; font-weight: 700;">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                      ${getT().serviceDetails.benefitsTitle}
+                    </h4>
+                    <ul class="modern-list">
+                      ${benefits.map((b: string) => `<li>${b}</li>`).join('')}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              ${processes.length > 0 ? `
+                <div class="process-timeline-section" style="margin-top: 60px; padding-top: 40px; border-top: 1px solid rgba(0,0,0,0.05);">
+                  <h4 style="color: var(${colorVar}); margin-bottom: 32px; font-size: 1.4rem; font-weight: 800; text-align: center;">${getT().serviceDetails.processTitle}</h4>
+                  <div class="timeline-horizontal">
+                    ${processes.map((p: string, i: number) => {
+        const nextColor = colorVar === '--logo-blue' ? '--logo-teal' : colorVar === '--logo-teal' ? '--logo-orange' : '--logo-blue';
+        return `
+                        <div class="timeline-step">
+                          <div class="step-number" style="background: linear-gradient(135deg, var(${colorVar}), var(${nextColor}));">${i + 1}</div>
+                          <div class="step-text">${p}</div>
+                        </div>
+                      `
+      }).join('')}
+                  </div>
+                </div>
+              ` : ''}
             </div>
           </div>
         </div>
@@ -157,13 +222,11 @@ document.addEventListener('click', (e) => {
 
       // Smooth scroll to details
       setTimeout(() => {
-        container.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        container.scrollIntoView({ behavior: 'smooth', block: 'start' })
       }, 100)
     }
   }
 })
-
-// (Removed dynamic PDF extraction; content is static per user brief)
 
 // Placeholder anchors for progressive enhancement
 document.addEventListener('click', (e) => {
@@ -193,7 +256,6 @@ window.addEventListener('scroll', () => {
 
   lastScroll = currentScroll
 })
-
 
 // Scroll Animation Observer
 function setupScrollAnimations() {
@@ -226,5 +288,3 @@ function setupScrollAnimations() {
 
 // Initialize scroll animations after a short delay to ensure DOM is ready
 setTimeout(setupScrollAnimations, 100)
-
-

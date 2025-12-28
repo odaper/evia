@@ -161,6 +161,8 @@ section {
   overflow: hidden
 }
 
+
+
 /* Light Sections with Animated Backgrounds */
 section#services {
   background:
@@ -298,7 +300,7 @@ section#about p {
 }
 
 section#about .card {
-  background: rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(28px) saturate(180%);
   border: 1px solid rgba(255, 255, 255, .48);
   box-shadow: 0 8px 32px rgba(15, 163, 177, .15), 0 0 0 1px rgba(255, 255, 255, .25) inset;
@@ -389,14 +391,16 @@ section#documents .card {
   box-shadow: 0 8px 32px rgba(30, 102, 245, .14), 0 0 0 1px rgba(255, 255, 255, .22) inset;
 }
 
-/* Dark Section - Pricing */
-section#tarifs {
+/* Dark Section - Pricing & References */
+section#tarifs,
+section#references {
   color: var(--dark-text);
   animation: dark-gradient 26s ease infinite;
   position: relative;
 }
 
-section#tarifs::before {
+section#tarifs::before,
+section#references::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -407,25 +411,31 @@ section#tarifs::before {
   pointer-events: none;
 }
 
-section#tarifs .animated-bg {
+section#tarifs .animated-bg,
+section#references .animated-bg {
   display: block
 }
 
-section#tarifs .orb {
+section#tarifs .orb,
+section#references .orb {
   mix-blend-mode: screen;
   opacity: 0.6
 }
 
 section#tarifs h2,
-section#tarifs h3 {
+section#references h2,
+section#tarifs h3,
+section#references h3 {
   color: var(--white)
 }
 
-section#tarifs p {
+section#tarifs p,
+section#references p {
   color: var(--neutral-300)
 }
 
-section#tarifs .card {
+section#tarifs .card,
+section#references .card {
   background: rgba(20, 27, 42, 0.3);
   backdrop-filter: blur(34px) saturate(180%);
   border: 1px solid rgba(255, 255, 255, .13);

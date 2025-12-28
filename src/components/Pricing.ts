@@ -13,10 +13,10 @@ export function renderPricing(t: Translations): string {
         <p class="muted">${t.pricing.subtitle}</p>
       </div>
       <div class="grid-3">
-        ${t.pricing.cards.map((c:{title:string,desc:string},i:number)=>`
+        ${t.pricing.cards.map((c: { title: string, desc: string }, i: number) => `
           <div class="card" style="padding:32px;text-align:center">
-            <div style="width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,${i===0?'var(--logo-blue),var(--logo-teal)':i===1?'var(--logo-teal),var(--logo-orange)':'var(--logo-orange),var(--logo-blue)'});display:flex;align-items:center;justify-content:center;margin:0 auto 20px;box-shadow:0 8px 24px rgba(30,102,245,.3)">
-              <span style="font-size:24px;font-weight:700;color:white">${i+1}</span>
+            <div style="width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,${i === 0 ? 'var(--logo-blue),var(--logo-teal)' : i === 1 ? 'var(--logo-teal),var(--logo-orange)' : 'var(--logo-orange),var(--logo-blue)'});display:flex;align-items:center;justify-content:center;margin:0 auto 20px;box-shadow:0 8px 24px rgba(30,102,245,.3)">
+              <span style="font-size:24px;font-weight:700;color:white">${i + 1}</span>
             </div>
             <h3 style="margin-bottom:12px">${c.title}</h3>
             <p style="color:var(--neutral-300);line-height:1.7">${c.desc}</p>
